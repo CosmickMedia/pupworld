@@ -1,0 +1,136 @@
+/*!
+Theme Name: Bark (Block Theme)
+Theme URI: https://github.com/CosmickMedia/pupworld
+Description: Custom WordPress theme based on the Bark FSE Theme.
+Author: Cosmick Media
+Author URI: https://cosmickmedia.com
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bark
+*/
+
+/* Bark Theme CSS */
+/* Progresive enhancement to reduce widows and orphans. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+/* Tiny tweak to make sure footers are properly spaced. */
+footer {
+	margin-top: 0 !important;
+}
+
+/* Provide better default color for social links */
+.wp-block-social-links.is-style-logos-only li.wp-social-link {
+	color: currentcolor;
+}
+
+.wp-block-social-links.is-style-logos-only .wp-social-link svg {
+	height: 1em;
+	width: 1em;
+}
+
+.wp-block-social-links.has-small-icon-size {
+	font-size: 20px;
+}
+
+/* Set default line height for font size presets. */
+.has-xx-large-font-size {
+	line-height: 1;
+}
+
+/* Add space between the header and first element, if its a paragraph. */
+.entry-content > p:first-child {
+	margin-top: var(--wp--style--root--padding-left);
+}
+
+/* Move header core/navigation to the right on mobile. */
+.order-0 {
+	order: 0;
+}
+
+.order-1 {
+	order: 1;
+}
+
+.grow-0 {
+	flex-grow: 0;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+
+	.md\:order-0 {
+		order: 0;
+	}
+
+	.md\:order-1 {
+		order: 1;
+	}
+
+	.md\:grow-0 {
+		flex-grow: 0;
+	}
+
+	.md\:grow {
+		flex-grow: 1;
+	}
+
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.error404 .wp-block-template-part {
+	margin-top: 0 !important;
+}
+
+/* WooCommerce CSS */
+
+li.wc-block-product:not([class*="product_cat"]) {
+    display: none;
+}
+
+.product-category img {
+    border: 1px solid transparent;
+    border-radius: 100rem;
+}
+
+.product-category a:hover img, .product-category a:focus img {
+    border-color: #444;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #4c7943;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title .count {
+    display: none;
+}
+
+/* Custom CSS */
+
+nav.is-responsive {
+	width: auto !important;
+}

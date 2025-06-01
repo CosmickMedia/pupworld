@@ -1,0 +1,15 @@
+{
+    "name": "cosmickmedia/bark",
+    "type": "wordpress-theme",
+    "homepage": "https://cosmickmedia.com",
+    "authors": [{
+        "name": "Cosmick Media",
+        "email": "sales@cosmickmedia.com",
+        "homepage": "https://cosmickmedia.com"
+    }],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
