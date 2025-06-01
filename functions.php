@@ -8,9 +8,10 @@ class PUPWORLD_THEME {
 		//add_action( 'init', [ $this, 'register_acf_blocks' ] );
 	}
 
-	function after_setup_theme() {
-		add_theme_support( 'menus' );
-	}
+        function after_setup_theme() {
+                add_theme_support( 'menus' );
+                add_theme_support( 'woocommerce' );
+        }
 
 	function register_nav_menus() {
 		register_nav_menus( [ 
