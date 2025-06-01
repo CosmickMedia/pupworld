@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: header-inner-pages
- * Slug: pupworld/header-inner-pages
+ * Slug: bark/header-inner-pages
  * Categories: hidden
  * Inserter: no
  */
@@ -24,7 +24,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php echo __('Learn more', 'pupworld');?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php echo __('Learn more', 'bark');?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></header>

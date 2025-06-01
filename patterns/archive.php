@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: archive
- * Slug: pupworld/archive
+ * Slug: bark/archive
  * Categories: hidden
  * Inserter: no
  */
@@ -23,7 +23,7 @@
 <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-query alignwide"><!-- wp:query-no-results -->
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php echo __('No search results..', 'pupworld');?></p>
+<p class="has-text-align-center"><?php echo __('No search results..', 'bark');?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results -->
 

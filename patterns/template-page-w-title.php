@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page with title
- * Slug: pupworld/template-page-w-title
+ * Slug: bark/template-page-w-title
  * Template Types: pages, single
  * Viewport width: 1400
  * Inserter: no
