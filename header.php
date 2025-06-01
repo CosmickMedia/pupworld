@@ -7,17 +7,12 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="site-header">
-    <div class="header-inner">
-        <?php if ( has_custom_logo() ) : ?>
-            <div class="site-logo"><?php the_custom_logo(); ?></div>
-        <?php endif; ?>
-        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <?php
-            wp_nav_menu( array(
-                'theme_location' => 'main',
-                'menu_class'     => 'main-menu',
-            ) );
-        ?>
-    </div>
-</header>
+<?php
+/**
+ * Output the original block based header markup restored from the
+ * database backup. The markup is stored in parts-fse/header.html and
+ * contains the same block structure used when editing the theme with
+ * the block editor.
+ */
+echo file_get_contents( get_template_directory() . '/parts-fse/header.html' );
+?>
