@@ -1,7 +1,7 @@
 /*!
-Theme Name: Bark (Block Theme)
+Theme Name: Pupworld (Block Theme)
 Theme URI: https://github.com/CosmickMedia/pupworld
-Description: Custom WordPress theme based on the Bark FSE Theme.
+Description: Custom WordPress theme based on the Pupworld FSE Theme.
 Author: Cosmick Media
 Author URI: https://cosmickmedia.com
 Requires at least: 6.4
@@ -10,10 +10,10 @@ Requires PHP: 7.0
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: bark
+Text Domain: pupworld
 */
 
-/* Bark Theme CSS */
+/* Pupworld Theme CSS */
 /* Progresive enhancement to reduce widows and orphans. */
 h1,
 h2,

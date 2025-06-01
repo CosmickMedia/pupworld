@@ -1,4 +1,4 @@
-=== Bark ===
+=== Pupworld ===
 Contributors: Automattic, Cosmick Media
 Requires at least: 6.4
 Tested up to: 6.4
@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Custom WordPress theme based on the Bark FSE Theme.
+Custom WordPress theme based on the Pupworld FSE Theme.
 
 == Changelog ==
 
@@ -17,8 +17,8 @@ Custom WordPress theme based on the Bark FSE Theme.
 
 == Copyright ==
 
-Bark WordPress Theme, (C) 2024 Automattic
-Bark is distributed under the terms of the GNU GPL.
+Pupworld WordPress Theme, (C) 2024 Automattic
+Pupworld is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

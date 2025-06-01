@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: Service areas
- * Slug: bark/service-areas
+ * Slug: pupworld/service-areas
  * Categories: contact
  * Inserter: yes
  */
@@ -17,11 +17,11 @@
 <div class="wp-block-group alignwide"><!-- wp:columns {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"45%"} -->
 <div class="wp-block-column" style="flex-basis:45%"><!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide"><?php echo esc_html__( 'Service Areas', 'bark' ); ?></h2>
+<h2 class="wp-block-heading alignwide"><?php echo esc_html__( 'Service Areas', 'pupworld' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'We service the following communities in the Cedar Ridge area:', 'bark' ); ?></p>
+<p><?php echo esc_html__( 'We service the following communities in the Cedar Ridge area:', 'pupworld' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -37,7 +37,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php echo esc_html__( 'Blissfield, Serenity Springs, Meadowbrook Heights, Willow Creek, Whispering Pines, Oakwood Hills, Cedar Ridge, Maplewood Park, Sunflower Valley, Riverbend Meadows', 'bark' ); ?></p>
+<p class="has-medium-font-size"><?php echo esc_html__( 'Blissfield, Serenity Springs, Meadowbrook Heights, Willow Creek, Whispering Pines, Oakwood Hills, Cedar Ridge, Maplewood Park, Sunflower Valley, Riverbend Meadows', 'pupworld' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

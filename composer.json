@@ -1,10 +1,10 @@
 {
-    "name": "cosmickmedia/bark",
+    "name": "cosmickmedia/pupworld",
     "type": "wordpress-theme",
     "homepage": "https://cosmickmedia.com",
     "authors": [{
         "name": "Cosmick Media",
-        "email": "sales@cosmickmedia.com",
+        "email": "support@cosmickmedia.com",
         "homepage": "https://cosmickmedia.com"
     }],
     "config": {

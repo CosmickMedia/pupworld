@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: Customer testimonials
- * Slug: bark/testimonials
+ * Slug: pupworld/testimonials
  * Categories: testimonials
  * Inserter: yes
  */
@@ -14,7 +14,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"left","align":"wide"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left"><?php echo esc_html__( 'What people are saying', 'bark' ); ?></h2>
+<h2 class="wp-block-heading alignwide has-text-align-left"><?php echo esc_html__( 'What people are saying', 'pupworld' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"calc( 0.25 * var(\u002d\u002dwp\u002d\u002dstyle\u002d\u002droot\u002d\u002dpadding-right, var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dgap\u002d\u002dhorizontal)))"} -->
@@ -25,7 +25,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}},"border":{"radius":"20px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:20px;background-color:#ffffff;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph -->
-<p>"<?php echo esc_html__( 'Since enlisting Bark\'s services, my dog\'s tail hasn\'t stopped wagging! From daily walks to tender care during my travels, this team has become an indispensable part of our life. I can\'t recommend them enough for their professionalism, and genuine love for pets.', 'bark' ); ?>"</p>
+<p>"<?php echo esc_html__( 'Since enlisting Pupworld\'s services, my dog\'s tail hasn\'t stopped wagging! From daily walks to tender care during my travels, this team has become an indispensable part of our life. I can\'t recommend them enough for their professionalism, and genuine love for pets.', 'pupworld' ); ?>"</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -37,7 +37,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}},"border":{"radius":"20px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:20px;background-color:#ffffff;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph -->
-<p>"<?php echo esc_html__( 'Thanks to Bark, my pup has transformed from restless to calm and content! Their attentive care and energetic walks have not only kept my pet healthy and happy but also given me peace of mind knowing he\'s in the best hands.', 'bark' ); ?></p>
+<p>"<?php echo esc_html__( 'Thanks to Pupworld, my pup has transformed from restless to calm and content! Their attentive care and energetic walks have not only kept my pet healthy and happy but also given me peace of mind knowing he\'s in the best hands.', 'pupworld' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -49,7 +49,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"border":{"radius":"20px"},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30","top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"color":{"background":"#ffffff"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:20px;background-color:#ffffff;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph -->
-<p>"<?php echo esc_html__( 'Thanks to Bark\'s attentive and caring team, I can head to work worry-free, knowing that my furry companion is getting the exercise and love they need. My dog\'s excitement every time they see their walker speaks volumes about the quality of service provided!', 'bark' ); ?></p>
+<p>"<?php echo esc_html__( 'Thanks to Pupworld\'s attentive and caring team, I can head to work worry-free, knowing that my furry companion is getting the exercise and love they need. My dog\'s excitement every time they see their walker speaks volumes about the quality of service provided!', 'pupworld' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

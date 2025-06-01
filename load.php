@@ -1,20 +1,20 @@
 <?php
 /**
- * Bark functions and definitions
+ * Pupworld functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Bark
- * @since Bark 1.0
+ * @package Pupworld
+ * @since Pupworld 1.0
  */
 
 declare( strict_types = 1 );
 
-if ( ! function_exists( 'bark_unregister_patterns' ) ) :
+if ( ! function_exists( 'pupworld_unregister_patterns' ) ) :
 	/**
 	 * Unregister Jetpack patterns and core patterns bundled in WordPress.
 	 */
-	function bark_unregister_patterns() {
+	function pupworld_unregister_patterns() {
 		$pattern_names = array(
 			// Jetpack form patterns.
 			'contact-form',
@@ -44,24 +44,24 @@ if ( ! function_exists( 'bark_unregister_patterns' ) ) :
 
 endif;
 
-if ( ! function_exists( 'bark_setup' ) ) :
+if ( ! function_exists( 'pupworld_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @since Bark 1.0
+	 * @since Pupworld 1.0
 	 *
 	 * @return void
 	 */
-	function bark_setup() {
+	function pupworld_setup() {
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
 		// Unregister Jetpack form patterns and core patterns bundled in WordPress.
 		// Simple sites
-		bark_unregister_patterns();
+		pupworld_unregister_patterns();
 		add_filter( 'wp_loaded', function () {
 			// Atomic sites
-			bark_unregister_patterns();
+			pupworld_unregister_patterns();
 		} );
 		// Remove theme support for the core and featured patterns coming from the Dotorg pattern directory.
 		remove_theme_support( 'core-block-patterns' );
@@ -69,31 +69,31 @@ if ( ! function_exists( 'bark_setup' ) ) :
 
 endif;
 
-add_action( 'after_setup_theme', 'bark_setup' );
+add_action( 'after_setup_theme', 'pupworld_setup' );
 
-if ( ! function_exists( 'bark_styles' ) ) :
+if ( ! function_exists( 'pupworld_styles' ) ) :
 	/**
 	 * Enqueue styles.
 	 *
-	 * @since Bark 1.0
+	 * @since Pupworld 1.0
 	 *
 	 * @return void
 	 */
-	function bark_styles() {
+	function pupworld_styles() {
 
 		// Register theme stylesheet.
 		wp_register_style(
-			'bark-style',
+			'pupworld-style',
 			get_template_directory_uri() . '/style.css',
 			array(),
 			wp_get_theme()->get( 'Version' )
 		);
 
 		// Enqueue theme stylesheet.
-		wp_enqueue_style( 'bark-style' );
+		wp_enqueue_style( 'pupworld-style' );
 
 	}
 
 endif;
 
-add_action( 'wp_enqueue_scripts', 'bark_styles' );
+add_action( 'wp_enqueue_scripts', 'pupworld_styles' );

@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: Services
- * Slug: bark/services
+ * Slug: pupworld/services
  * Categories: services
  * Inserter: yes
  */
@@ -16,7 +16,7 @@
 <!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"33%","fontSize":"large"} -->
 <div class="wp-block-column is-vertically-aligned-center has-large-font-size" style="flex-basis:33%"><!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide"><?php echo esc_html__( 'Trusted local dog walking &amp; pet care', 'bark' ); ?></h2>
+<h2 class="wp-block-heading alignwide"><?php echo esc_html__( 'Trusted local dog walking &amp; pet care', 'pupworld' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -26,7 +26,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:paragraph {"align":"left","style":{"layout":{"selfStretch":"fixed","flexSize":"70%"}}} -->
-<p class="has-text-align-left"><?php echo esc_html__( 'Bringing joy to furry friends and peace of mind to their owners with our reliable and loving pet care services.', 'bark' ); ?></p>
+<p class="has-text-align-left"><?php echo esc_html__( 'Bringing joy to furry friends and peace of mind to their owners with our reliable and loving pet care services.', 'pupworld' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -43,17 +43,17 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html__( 'Dog walking', 'bark' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html__( 'Dog walking', 'pupworld' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'Let us take the leash and lead your pup on adventures, while you take a well-deserved break! Take your pick of individual or group walk options.', 'bark' ); ?></p>
+<p><?php echo esc_html__( 'Let us take the leash and lead your pup on adventures, while you take a well-deserved break! Take your pick of individual or group walk options.', 'pupworld' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'bark' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'pupworld' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -65,17 +65,17 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html__( 'Welfare visits', 'bark' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html__( 'Welfare visits', 'pupworld' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'Quick check-ins and cuddle sessions, including food and water refills, to ensure your pet feels loved and cared for while you\'re out and about.', 'bark' ); ?></p>
+<p><?php echo esc_html__( 'Quick check-ins and cuddle sessions, including food and water refills, to ensure your pet feels loved and cared for while you\'re out and about.', 'pupworld' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'bark' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'pupworld' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -92,12 +92,12 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'While you\'re off enjoying your vacation, we\'ll pamper your pet with playful activities and cozy cuddles, making their stay feel like a holiday too!', 'bark' ); ?></p>
+<p><?php echo esc_html__( 'While you\'re off enjoying your vacation, we\'ll pamper your pet with playful activities and cozy cuddles, making their stay feel like a holiday too!', 'pupworld' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'bark' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'pupworld' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -109,17 +109,17 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html__( 'Vet visits', 'bark' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html__( 'Vet visits', 'pupworld' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'Trust us to whisk your pet off to the doctor\'s for their check-up. They\'ll be in safe hands, ensuring they stay healthy and happy.', 'bark' ); ?></p>
+<p><?php echo esc_html__( 'Trust us to whisk your pet off to the doctor\'s for their check-up. They\'ll be in safe hands, ensuring they stay healthy and happy.', 'pupworld' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'bark' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Starting at $35 - 1/2h', 'pupworld' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

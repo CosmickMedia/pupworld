@@ -1,7 +1,7 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-class BARK_THEME {
+class PUPWORLD_THEME {
 	function __construct() {
 		add_action( 'after_setup_theme', [ $this, 'after_setup_theme' ] );
 		add_action( 'init', [ $this, 'register_nav_menus' ] );
@@ -26,6 +26,6 @@ class BARK_THEME {
 	}
 }
 
-$BARK_THEME = new BARK_THEME();
+$PUPWORLD_THEME = new PUPWORLD_THEME();
 
 require_once ( dirname( __FILE__ ) . '/load.php' );
