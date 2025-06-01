@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: About us
- * Slug: pupworld/about
+ * Slug: bark/about
  * Categories: about
  * Inserter: yes
  */
@@ -16,20 +16,20 @@
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php echo esc_html__( 'Meet the pack', 'pupworld' ); ?></h2>
+<h2 class="wp-block-heading"><?php echo esc_html__( 'Meet the pack', 'bark' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'At Pupworld, we\'re not just pet lovers, we\'re pet enthusiasts! With a passion for providing top-notch care, our team is dedicated to ensuring every tail wags with happiness. From daily dog walks to personalized pet sitting services, we\'re here to give your furry friends the love, attention, and exercise they deserve.', 'pupworld' ); ?></p>
+<p><?php echo esc_html__( 'At Bark, we\'re not just pet lovers, we\'re pet enthusiasts! With a passion for providing top-notch care, our team is dedicated to ensuring every tail wags with happiness. From daily dog walks to personalized pet sitting services, we\'re here to give your furry friends the love, attention, and exercise they deserve.', 'bark' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php echo esc_html__( 'With years of experience and a commitment to building trusting relationships with both pets and their owners, we strive to be your go-to choice for all your pet care needs in Cedar Ridge. Let us be your pet\'s second-best friend!', 'pupworld' ); ?></p>
+<p><?php echo esc_html__( 'With years of experience and a commitment to building trusting relationships with both pets and their owners, we strive to be your go-to choice for all your pet care needs in Cedar Ridge. Let us be your pet\'s second-best friend!', 'bark' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Learn more', 'pupworld' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Learn more', 'bark' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

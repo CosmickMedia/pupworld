@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: Latest posts
- * Slug: pupworld/latest-posts
+ * Slug: bark/latest-posts
  * Categories: blog
  * Inserter: yes
  */
@@ -15,7 +15,7 @@
 
 <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide"><?php echo esc_html__( 'Pet Care tips', 'pupworld' ); ?></h2>
+<h2 class="wp-block-heading alignwide"><?php echo esc_html__( 'Pet Care tips', 'bark' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"calc( 0.25 * var(\u002d\u002dwp\u002d\u002dstyle\u002d\u002droot\u002d\u002dpadding-right, var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dgap\u002d\u002dhorizontal)))"} -->

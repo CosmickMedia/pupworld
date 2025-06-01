@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: Contact
- * Slug: pupworld/contact
+ * Slug: bark/contact
  * Categories: contact
  * Inserter: yes
  */
@@ -16,7 +16,7 @@
 <!-- wp:columns {"align":"wide","style":{"border":{"radius":"20px"},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"theme-1"} -->
 <div class="wp-block-columns alignwide has-theme-1-background-color has-background" style="border-radius:20px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"textAlign":"left","align":"wide"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left"><?php echo esc_html__( 'Contact us', 'pupworld' ); ?></h2>
+<h2 class="wp-block-heading alignwide has-text-align-left"><?php echo esc_html__( 'Contact us', 'bark' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
