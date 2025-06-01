@@ -20,7 +20,10 @@ $template_slug = is_home() ? 'home' : 'front-page';
 $template      = null;
 
 if ( function_exists( 'get_block_template' ) ) {
-    $template = get_block_template( get_stylesheet() . '//' . $template_slug, 'wp_template' );
+    $template = get_block_template(
+        get_stylesheet() . '//' . $template_slug,
+        'wp_template'
+    );
 }
 
 if ( $template && ! empty( $template->content ) ) {
