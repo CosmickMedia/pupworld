@@ -134,3 +134,31 @@ li.wc-block-product:not([class*="product_cat"]) {
 nav.is-responsive {
 	width: auto !important;
 }
+
+/* WooCommerce Layout */
+.woocommerce .woocommerce-layout {
+        gap: var(--wp--style--block-gap, 2rem);
+}
+.woocommerce .woocommerce-layout .wp-block-column.main {
+        flex-basis: 75%;
+}
+.woocommerce .woocommerce-layout .wp-block-column.sidebar {
+        flex-basis: 25%;
+}
+
+.woocommerce ul.products {
+        list-style: none;
+        margin: 0 0 2rem;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+}
+
+.woocommerce ul.products li.product {
+        margin: 0;
+}
+
+.woocommerce div.product {
+        margin-bottom: 2rem;
+}
