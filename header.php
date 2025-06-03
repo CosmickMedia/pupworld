@@ -11,7 +11,7 @@
 <header class="site-header navbar navbar-expand-lg" style="background-color: #102624;">
     <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-3">
         <div class="d-flex align-items-center">
-            <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ); ?>">
+            <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="/wp-content/uploads/2025/05/logo.min_.png" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" width="100" height="100" />
             </a>
             <div class="business-info ms-4 text-light">
