@@ -4,7 +4,8 @@
     background-color: #102624;
 }
 
-.site-header .container {
+.site-header .container,
+.site-header .container-fluid {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -49,4 +50,18 @@
 
 .header-phone i {
     margin-right: 4px;
+}
+
+/* Nested sub menus */
+.dropdown-menu .dropdown-menu {
+    background-color: #102624;
+    border: none;
+}
+.dropdown-menu .dropdown-menu .dropdown-item {
+    color: #f7f7f3;
+}
+.dropdown-menu .dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-menu .dropdown-item:focus {
+    background-color: #f2a307;
+    color: #102624;
 }
