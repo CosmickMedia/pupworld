@@ -70,3 +70,10 @@
 .jumbotron {
     font-family: var(--wp--preset--font-family--asap-condensed);
 }
+
+/* Breed images */
+.breed img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -17,22 +17,22 @@ get_header();
         <h2 class="mb-4">Available for adoption</h2>
         <div class="row breeds">
             <article class="breed col-md-3 text-center">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/pexels-goochie-poochie-19145889.jpg" alt="Golden Retriever">
+                <img class="img-fluid" src="/wp-content/uploads/2025/04/golden-retreiver.jpg" alt="Golden Retriever">
                 <h3>Golden Retriever</h3>
                 <p>Known for their gentle nature, intelligence, and playful spirit, Goldens make the perfect family companion.</p>
             </article>
             <article class="breed col-md-3 text-center">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/pexels-jagheterjohann-12541401-1.jpg" alt="Golden Doodle">
+                <img class="img-fluid" src="/wp-content/uploads/2025/04/golden-doodle.jpg" alt="Golden Doodle">
                 <h3>Golden Doodle</h3>
                 <p>With their affectionate nature, intelligence, and low-shedding coats, Goldendoodles make the perfect family companion, bringing warmth, joy, and endless fun into your home.</p>
             </article>
             <article class="breed col-md-3 text-center">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/pexels-blue-bird-7210704.jpg" alt="Rottweiler">
+                <img class="img-fluid" src="/wp-content/uploads/2025/04/rottweiler.jpg" alt="Rottweiler">
                 <h3>Rottweiler</h3>
                 <p>With their calm and confident demeanor, combined with a deep bond to their family, makes them not only excellent protectors but also affectionate and loving companions who thrive in a caring home.</p>
             </article>
             <article class="breed col-md-3 text-center">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/pexels-samson-katt-5255596-1.jpg" alt="Yorkshire Terrier">
+                <img class="img-fluid" src="/wp-content/uploads/2025/04/yorkshire-terrier.jpg" alt="Yorkshire Terrier">
                 <h3>Yorkshire Terrier</h3>
                 <p>Trust us to whisk your pet off to the doctor’s for their check-up. They’ll be in safe hands, ensuring they stay healthy and happy.</p>
             </article>
