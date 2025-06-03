@@ -21,14 +21,15 @@
                 ) );
                 ?>
                 <ul class="social-links list-inline mt-3">
-                    <li class="list-inline-item"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-                    <li class="list-inline-item"><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-contact text-center">
-            <p class="mb-1"><strong>Email:</strong> <a href="mailto:01pupworld@gmail.com">01pupworld@gmail.com</a> | <strong>Phone:</strong> <a href="tel:260-710-9103">(260) 710-9103</a></p>
+            <p class="mb-1"><strong>Email:</strong> <a href="mailto:01pupworld@gmail.com">01pupworld@gmail.com</a> | <strong>Phone:</strong> <a href="tel:2607109103">260.710.9103</a></p>
             <p class="mb-0">10512 Schwartz RD. Ft Wayne. IN 46835</p>
         </div>
     </div>
