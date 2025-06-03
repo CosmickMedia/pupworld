@@ -12,7 +12,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-3">
         <div class="d-flex align-items-center">
             <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="/wp-content/uploads/2025/05/logo.min_.png" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" width="100" height="100" />
+                <img src="/wp-content/uploads/2025/05/logo.min_.png" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" width="90" height="90" />
             </a>
             <div class="business-info ms-4 text-light">
                 <div class="business-name fw-bold"><?php bloginfo( 'name' ); ?></div>
