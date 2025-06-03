@@ -8,35 +8,29 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<div class="site-header">
-    <div class="header-container">
-        <header class="site-header-content">
-            <div class="site-branding">
-                <?php if ( has_custom_logo() ) : ?>
-                    <?php the_custom_logo(); ?>
-                <?php endif; ?>
-                <h1 class="site-title">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
-                    </a>
-                </h1>
-            </div>
-
-            <div class="header-navigation">
-                <?php
-                wp_nav_menu( array(
-                    'theme_location' => 'main',
-                    'menu_id'        => 'primary-menu',
-                    'container'      => 'nav',
-                    'container_class' => 'main-navigation',
-                    'fallback_cb'    => false,
-                ) );
-                ?>
-
-                <div class="header-buttons">
-                    <a href="tel:260-710-9103" class="button">260.710.9103</a>
-                </div>
-            </div>
-        </header>
+<div class="site-header navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <?php if ( has_custom_logo() ) : ?>
+                <?php the_custom_logo(); ?>
+            <?php else : ?>
+                <?php bloginfo( 'name' ); ?>
+            <?php endif; ?>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-menu-collapse" aria-controls="primary-menu-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primary-menu-collapse">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'main',
+                'menu_id'        => 'primary-menu',
+                'container'      => false,
+                'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
+                'fallback_cb'    => false,
+            ) );
+            ?>
+            <a href="tel:260-710-9103" class="btn btn-primary ms-lg-3">260.710.9103</a>
+        </div>
     </div>
 </div>
