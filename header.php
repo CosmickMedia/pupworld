@@ -8,9 +8,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header class="site-header navbar navbar-expand-lg navbar-dark" style="background-color: var(--wp--preset--color--theme-5);">
-    <div class="container">
-        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+<header class="site-header navbar navbar-expand-lg" style="background-color: #102624;">
+    <div class="container d-flex align-items-center py-2">
+        <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <?php if ( has_custom_logo() ) : ?>
                 <?php the_custom_logo(); ?>
             <?php else : ?>
@@ -37,7 +37,15 @@
                     'fallback_cb'    => false,
                 ) );
                 ?>
-                <a href="tel:260-710-9103" class="btn btn-primary mt-3 d-lg-none">260.710.9103</a>
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="business-info text-light mt-3">
+                    <div class="business-name fw-bold mb-1"><?php bloginfo( 'name' ); ?></div>
+                    <div class="header-phone"><i class="fas fa-phone"></i> <a href="tel:260-710-9103" class="text-light text-decoration-none">260.710.9103</a></div>
+                </div>
             </div>
         </div>
 
@@ -47,11 +55,21 @@
                 'theme_location' => 'main',
                 'menu_id'        => 'primary-menu',
                 'container'      => false,
-                'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
+                'menu_class'     => 'navbar-nav ms-auto mb-2 mb-lg-0',
                 'fallback_cb'    => false,
             ) );
             ?>
-            <a href="tel:260-710-9103" class="btn btn-primary ms-lg-3">260.710.9103</a>
+            <div class="header-right d-flex align-items-center ms-3">
+                <div class="social-icons me-3">
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="business-info text-end text-light">
+                    <div class="business-name fw-bold"><?php bloginfo( 'name' ); ?></div>
+                    <div class="header-phone"><i class="fas fa-phone"></i> <a href="tel:260-710-9103" class="text-light text-decoration-none">260.710.9103</a></div>
+                </div>
+            </div>
         </div>
     </div>
 </header>

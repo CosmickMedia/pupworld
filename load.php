@@ -89,6 +89,13 @@ if ( ! function_exists( 'bark_styles' ) ) :
                 );
 
                 wp_register_style(
+                        'font-awesome',
+                        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+                        array(),
+                        '6.4.0'
+                );
+
+                wp_register_style(
                         'bark-style',
                         get_template_directory_uri() . '/style.css',
                         array( 'bootstrap-css' ),
@@ -96,6 +103,7 @@ if ( ! function_exists( 'bark_styles' ) ) :
                 );
 
                 wp_enqueue_style( 'bootstrap-css' );
+                wp_enqueue_style( 'font-awesome' );
                 wp_enqueue_style( 'bark-style' );
 
                 wp_register_script(
@@ -106,7 +114,16 @@ if ( ! function_exists( 'bark_styles' ) ) :
                         true
                 );
 
+                wp_register_script(
+                        'bark-dropdown',
+                        get_template_directory_uri() . '/assets/js/dropdown.js',
+                        array( 'bootstrap-js' ),
+                        wp_get_theme()->get( 'Version' ),
+                        true
+                );
+
                 wp_enqueue_script( 'bootstrap-js' );
+                wp_enqueue_script( 'bark-dropdown' );
 
         }
 
