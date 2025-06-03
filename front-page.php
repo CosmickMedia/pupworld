@@ -8,10 +8,15 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main homepage container py-4">
-    <?php
-    echo do_blocks( '<!-- wp:pattern {"slug":"bark/home-intro"} /-->' );
-    ?>
+<main id="primary" class="site-main homepage">
+    <section class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 mb-3">Find your best friend!</h1>
+            <a class="btn btn-primary btn-lg" href="/all-puppies">See puppies</a>
+        </div>
+    </section>
+
+    <div class="container py-4">
 
     <section class="adoption mb-5">
         <h2 class="mb-4">Available for adoption</h2>
@@ -62,10 +67,11 @@ get_header();
         <p>10512 Schwartz Rd, Ft Wayne, IN 46835</p>
     </section>
 
-    <?php
-    echo do_blocks( '<!-- wp:pattern {"slug":"bark/latest-posts"} /-->' );
-    echo do_blocks( '<!-- wp:pattern {"slug":"bark/contact"} /-->' );
-    ?>
+        <?php
+        echo do_blocks( '<!-- wp:pattern {"slug":"bark/latest-posts"} /-->' );
+        echo do_blocks( '<!-- wp:pattern {"slug":"bark/contact"} /-->' );
+        ?>
+    </div>
 </main>
 
 <?php

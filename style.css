@@ -77,3 +77,45 @@ Version: 1.0.1
     height: auto;
     object-fit: cover;
 }
+
+/* Hero section */
+.hero {
+    background-image: url('/wp-content/uploads/2025/04/front-page-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(16, 38, 36, 0.7);
+}
+.hero > .container {
+    position: relative;
+    z-index: 2;
+}
+.hero .btn-primary {
+    background-color: #f2a307;
+    border-color: #f2a307;
+    color: #102624;
+}
+.hero .btn-primary:hover {
+    background-color: #d38e06;
+    border-color: #d38e06;
+    color: #ffffff;
+}
+
+/* General section spacing */
+section {
+    margin-bottom: 4rem;
+}
+.financing,
+.mission,
+.location {
+    text-align: center;
+}
