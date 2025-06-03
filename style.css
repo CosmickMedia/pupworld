@@ -11,9 +11,9 @@
 
 /* Logo size */
 .navbar-brand img {
-    max-height: 15px;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
 /* Navigation links */

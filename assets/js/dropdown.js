@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var menuItems = document.querySelectorAll('#primary-menu > li');
+    menuItems.forEach(function (item) {
+        item.classList.add('nav-item');
+        var link = item.querySelector('a');
+        if (link) {
+            link.classList.add('nav-link');
+        }
+    });
+
     var dropdownParents = document.querySelectorAll('#primary-menu li.menu-item-has-children');
     dropdownParents.forEach(function (parent) {
         parent.classList.add('dropdown');
