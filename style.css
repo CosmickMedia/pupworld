@@ -66,11 +66,6 @@
     color: #102624;
 }
 
-/* Jumbotron font */
-.jumbotron {
-    font-family: var(--wp--preset--font-family--asap-condensed);
-}
-
 /* Breed images */
 .breed img {
     width: 100%;
