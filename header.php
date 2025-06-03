@@ -9,13 +9,9 @@
 <?php wp_body_open(); ?>
 
 <header class="site-header navbar navbar-expand-lg" style="background-color: #102624;">
-    <div class="container d-flex align-items-center py-2">
+    <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-3">
         <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <?php if ( has_custom_logo() ) : ?>
-                <?php the_custom_logo(); ?>
-            <?php else : ?>
-                <?php bloginfo( 'name' ); ?>
-            <?php endif; ?>
+            <img src="/wp-content/uploads/2025/05/logo.min_.png" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" width="100" height="100" />
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryOffcanvas" aria-controls="primaryOffcanvas" aria-label="Toggle navigation">
@@ -23,17 +19,17 @@
         </button>
 
 
-        <div class="collapse navbar-collapse d-none d-lg-flex" id="primary-menu-collapse">
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="primary-menu-collapse">
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'main',
                 'menu_id'        => 'primary-menu',
                 'container'      => false,
-                'menu_class'     => 'navbar-nav ms-auto mb-2 mb-lg-0',
+                'menu_class'     => 'navbar-nav me-3 mb-2 mb-lg-0',
                 'fallback_cb'    => false,
             ) );
             ?>
-            <div class="header-right d-flex align-items-center ms-3">
+            <div class="header-right d-flex align-items-center">
                 <div class="social-icons me-3">
                     <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
