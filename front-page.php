@@ -1,39 +1,34 @@
 <?php
 /**
- * Front page template for PupWorld.
+ * Front page template for Bark.
  *
- * Renders the block-based front page using the templates stored
- * in the database. Falls back to rendering the page content
- * directly if no block template exists.
- *
- * @package PupWorld
+ * @package Bark
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit; // Exit if accessed directly.
-}
-
 get_header();
+?>
 
-// Determine whether a dedicated front-page template exists.
-$template_slug = is_home() ? 'home' : 'front-page';
-$template      = null;
+    <main id="primary" class="site-main">
+        <?php
+        while ( have_posts() ) :
+            the_post();
+            ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div class="entry-content">
+                    <?php
+                    the_content();
 
-if ( function_exists( 'get_block_template' ) ) {
-    $template = get_block_template(
-        get_stylesheet() . '//' . $template_slug,
-        'wp_template'
-    );
-}
+                    wp_link_pages(
+                        array(
+                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bark' ),
+                            'after'  => '</div>',
+                        )
+                    );
+                    ?>
+                </div>
+            </article>
+        <?php endwhile; ?>
+    </main>
 
-if ( $template && ! empty( $template->content ) ) {
-    // Output the saved block template content.
-    echo do_blocks( $template->content );
-} else {
-    // Fallback to the content of the front page itself.
-    while ( have_posts() ) : the_post();
-        the_content();
-    endwhile;
-}
-
+<?php
 get_footer();
