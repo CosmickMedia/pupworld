@@ -10,9 +10,15 @@
 
 <header class="site-header navbar navbar-expand-lg" style="background-color: #102624;">
     <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-3">
-        <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <img src="/wp-content/uploads/2025/05/logo.min_.png" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" width="100" height="100" />
-        </a>
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img src="/wp-content/uploads/2025/05/logo.min_.png" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" width="100" height="100" />
+            </a>
+            <div class="business-info ms-4 text-light">
+                <div class="business-name fw-bold"><?php bloginfo( 'name' ); ?></div>
+                <div class="header-phone"><i class="fas fa-phone"></i> <a href="tel:2607109103" class="text-light text-decoration-none">260.710.9103</a></div>
+            </div>
+        </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryOffcanvas" aria-controls="primaryOffcanvas" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,10 +40,6 @@
                     <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="business-info text-end text-light">
-                    <div class="business-name fw-bold"><?php bloginfo( 'name' ); ?></div>
-                    <div class="header-phone"><i class="fas fa-phone"></i> <a href="tel:260-710-9103" class="text-light text-decoration-none">260.710.9103</a></div>
                 </div>
             </div>
         </div>
