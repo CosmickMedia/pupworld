@@ -9,6 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 Custom WordPress theme based on the Bark FSE Theme.
+Now includes Bootstrap 5.3 for styling and components.
 
 == Changelog ==
 

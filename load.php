@@ -72,27 +72,43 @@ endif;
 add_action( 'after_setup_theme', 'bark_setup' );
 
 if ( ! function_exists( 'bark_styles' ) ) :
-	/**
-	 * Enqueue styles.
-	 *
-	 * @since Bark 1.0
-	 *
-	 * @return void
-	 */
-	function bark_styles() {
+        /**
+         * Enqueue Bootstrap and theme styles.
+         *
+         * @since Bark 1.0
+         *
+         * @return void
+         */
+        function bark_styles() {
 
-		// Register theme stylesheet.
-		wp_register_style(
-			'bark-style',
-			get_template_directory_uri() . '/style.css',
-			array(),
-			wp_get_theme()->get( 'Version' )
-		);
+                wp_register_style(
+                        'bootstrap-css',
+                        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
+                        array(),
+                        '5.3.2'
+                );
 
-		// Enqueue theme stylesheet.
-		wp_enqueue_style( 'bark-style' );
+                wp_register_style(
+                        'bark-style',
+                        get_template_directory_uri() . '/style.css',
+                        array( 'bootstrap-css' ),
+                        wp_get_theme()->get( 'Version' )
+                );
 
-	}
+                wp_enqueue_style( 'bootstrap-css' );
+                wp_enqueue_style( 'bark-style' );
+
+                wp_register_script(
+                        'bootstrap-js',
+                        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js',
+                        array(),
+                        '5.3.2',
+                        true
+                );
+
+                wp_enqueue_script( 'bootstrap-js' );
+
+        }
 
 endif;
 
