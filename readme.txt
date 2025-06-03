@@ -1,4 +1,4 @@
-=== Bark ===
+=== Pup World ===
 Contributors: Automattic, Cosmick Media
 Requires at least: 6.4
 Tested up to: 6.4
@@ -13,13 +13,13 @@ Now includes Bootstrap 5.3 for styling and components.
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 =
 * Initial release
 
 == Copyright ==
 
-Bark WordPress Theme, (C) 2024 Automattic
-Bark is distributed under the terms of the GNU GPL.
+Pup World WordPress Theme, (C) 2024 Automattic
+Pup World is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

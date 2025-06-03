@@ -2,7 +2,7 @@
 /**
  * Custom front page rebuilt from static backup.
  *
- * @package Bark
+ * @package Pup World
  */
 
 get_header();
