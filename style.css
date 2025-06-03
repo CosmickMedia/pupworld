@@ -13,15 +13,57 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bark
 */
 
-/* Bark Theme CSS */
-/* Progresive enhancement to reduce widows and orphans. */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote {
+/* ==========================================================================
+   CSS Variables - Converted from theme.json
+   ========================================================================== */
+:root {
+	/* Colors */
+	--wp--preset--color--theme-1: #ffffff;
+	--wp--preset--color--theme-2: #f6f1eb;
+	--wp--preset--color--theme-3: #ddf1ce;
+	--wp--preset--color--theme-4: #cbfba0;
+	--wp--preset--color--theme-5: #102624;
+
+	/* Spacing */
+	--wp--preset--spacing--20: min(20px, 2vw);
+	--wp--preset--spacing--30: min(40px, 4vw);
+	--wp--preset--spacing--40: min(60px, 6vw);
+	--wp--preset--spacing--50: min(80px, 8vw);
+	--wp--preset--spacing--60: min(100px, 10vw);
+	--wp--preset--spacing--70: min(120px, 12vw);
+	--wp--preset--spacing--80: min(140px, 14vw);
+
+	/* Typography */
+	--wp--preset--font-size--small: 16px;
+	--wp--preset--font-size--medium: 24px;
+	--wp--preset--font-size--large: 40px;
+	--wp--preset--font-size--x-large: 60px;
+	--wp--preset--font-size--xx-large: clamp(40px, 5vw, 96px);
+
+	/* Layout */
+	--wp--preset--content-size: 620px;
+	--wp--preset--content-size--wide: 1440px;
+}
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Urbanist", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.65;
+	color: var(--wp--preset--color--theme-5);
+	background-color: var(--wp--preset--color--theme-2);
+}
+
+/* Progressive enhancement to reduce widows and orphans */
+h1, h2, h3, h4, h5, h6, blockquote {
 	text-wrap: balance;
 }
 
@@ -29,7 +71,664 @@ p {
 	text-wrap: pretty;
 }
 
-/* Tiny tweak to make sure footers are properly spaced. */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Asap Condensed", sans-serif;
+	font-weight: 500;
+	color: var(--wp--preset--color--theme-5);
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: var(--wp--preset--font-size--xx-large);
+	line-height: 1;
+}
+
+h2 {
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1;
+}
+
+h3 {
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.2;
+}
+
+h4 {
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 1.3;
+}
+
+h5 {
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 1.4;
+}
+
+h6 {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+a {
+	color: var(--wp--preset--color--theme-5);
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+	opacity: 0.8;
+}
+
+/* ==========================================================================
+   Layout & Container Styles
+   ========================================================================== */
+.site-main {
+	max-width: var(--wp--preset--content-size--wide);
+	margin: 0 auto;
+	padding: var(--wp--preset--spacing--40);
+}
+
+.entry-content {
+	max-width: var(--wp--preset--content-size);
+	margin: 0 auto;
+}
+
+.entry-content > * {
+	margin-bottom: var(--wp--preset--spacing--20);
+}
+
+.entry-content > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Add space between the header and first element, if its a paragraph */
+.entry-content > p:first-child {
+	margin-top: var(--wp--preset--spacing--40);
+}
+
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
+.site-header {
+	background-color: var(--wp--preset--color--theme-5);
+	color: var(--wp--preset--color--theme-2);
+	padding: calc(0.25 * var(--wp--preset--spacing--40)) 0;
+}
+
+.header-container {
+	max-width: var(--wp--preset--content-size--wide);
+	margin: 0 auto;
+	padding: 0 var(--wp--preset--spacing--40);
+}
+
+.site-header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--wp--preset--spacing--20) 0;
+}
+
+.site-branding {
+	display: flex;
+	align-items: center;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.site-branding img {
+	width: 46px;
+	height: auto;
+}
+
+.site-title {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 550;
+	font-family: "Asap Condensed", sans-serif;
+}
+
+.site-title a {
+	color: var(--wp--preset--color--theme-2);
+	text-decoration: none;
+}
+
+.header-navigation {
+	display: flex;
+	align-items: center;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.main-navigation a {
+	color: var(--wp--preset--color--theme-2);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--small);
+	transition: opacity 0.2s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+	opacity: 0.8;
+}
+
+.header-buttons .button {
+	background-color: var(--wp--preset--color--theme-4);
+	color: var(--wp--preset--color--theme-5);
+	padding: 10px 24px;
+	border-radius: 150rem;
+	text-decoration: none;
+	font-weight: 700;
+	font-family: "Asap Condensed", sans-serif;
+	display: inline-block;
+	transition: all 0.2s ease;
+}
+
+.header-buttons .button:hover,
+.header-buttons .button:focus {
+	background-color: var(--wp--preset--color--theme-1);
+	transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+.site-footer {
+	background-color: var(--wp--preset--color--theme-5);
+	color: var(--wp--preset--color--theme-2);
+	padding: var(--wp--preset--spacing--40);
+	margin-top: 0;
+}
+
+.footer-container {
+	max-width: var(--wp--preset--content-size--wide);
+	margin: 0 auto;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+.footer-branding {
+	display: flex;
+	align-items: center;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.footer-logo img {
+	width: 44px;
+	height: auto;
+}
+
+.footer-site-title {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 550;
+	font-family: "Asap Condensed", sans-serif;
+}
+
+.footer-navigation {
+	display: flex;
+	align-items: center;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.footer-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.footer-nav a {
+	color: var(--wp--preset--color--theme-2);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--small);
+	transition: opacity 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+	opacity: 0.8;
+}
+
+.social-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 8px;
+}
+
+.social-links a {
+	color: var(--wp--preset--color--theme-2);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.footer-contact {
+	text-align: center;
+}
+
+.footer-contact p {
+	margin: 0.5em 0;
+}
+
+.footer-contact a {
+	color: var(--wp--preset--color--theme-2);
+}
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+.wp-block-button__link,
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: var(--wp--preset--color--theme-4);
+	color: var(--wp--preset--color--theme-5);
+	border: none;
+	border-radius: 50px;
+	padding: 10px 24px;
+	font-family: "Urbanist", sans-serif;
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 450;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.wp-block-button__link:hover,
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: var(--wp--preset--color--theme-1);
+	color: var(--wp--preset--color--theme-5);
+	transform: translateY(-2px);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 1px solid currentColor;
+	color: var(--wp--preset--color--theme-5);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--theme-5);
+	color: var(--wp--preset--color--theme-1);
+}
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select {
+	width: 100%;
+	padding: 10px 15px;
+	border: 1px solid var(--wp--preset--color--theme-2);
+	border-radius: 3px;
+	background-color: var(--wp--preset--color--theme-4);
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid var(--wp--preset--color--theme-5);
+	outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Archive & Blog Styles
+   ========================================================================== */
+.page-header {
+	text-align: center;
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+.page-title {
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1;
+}
+
+article.post {
+	margin-bottom: var(--wp--preset--spacing--40);
+	padding: var(--wp--preset--spacing--30);
+	background-color: var(--wp--preset--color--theme-1);
+	border-radius: 20px;
+}
+
+.entry-header {
+	margin-bottom: var(--wp--preset--spacing--20);
+}
+
+.entry-title {
+	margin-top: 0;
+}
+
+.entry-title a {
+	color: var(--wp--preset--color--theme-5);
+	text-decoration: none;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	text-decoration: underline;
+}
+
+.entry-meta {
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--theme-3);
+	margin-bottom: var(--wp--preset--spacing--20);
+}
+
+.entry-summary {
+	margin-bottom: var(--wp--preset--spacing--20);
+}
+
+/* ==========================================================================
+   Pagination Styles
+   ========================================================================== */
+.pagination,
+.posts-pagination,
+.post-navigation {
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-numbers {
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--wp--preset--color--theme-5);
+}
+
+.page-numbers.current {
+	background-color: var(--wp--preset--color--theme-4);
+	border-radius: 3px;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+.no-underline a {
+	text-decoration: none;
+}
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+.alignfull {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw);
+}
+
+.alignwide {
+	max-width: var(--wp--preset--content-size--wide);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* ==========================================================================
+   Mobile Responsive Styles
+   ========================================================================== */
+@media (max-width: 768px) {
+	.site-header-content {
+		flex-wrap: wrap;
+		gap: var(--wp--preset--spacing--20);
+	}
+
+	.header-navigation {
+		width: 100%;
+		flex-direction: column;
+		gap: var(--wp--preset--spacing--20);
+	}
+
+	.main-navigation ul {
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		gap: var(--wp--preset--spacing--30);
+		text-align: center;
+	}
+
+	.footer-navigation {
+		flex-direction: column;
+		gap: var(--wp--preset--spacing--20);
+	}
+
+	.footer-nav ul {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.site-main {
+		padding: var(--wp--preset--spacing--20);
+	}
+}
+
+@media (min-width: 600px) {
+	.order-0 { order: 0; }
+	.order-1 { order: 1; }
+	.md\:order-0 { order: 0; }
+	.md\:order-1 { order: 1; }
+	.grow-0 { flex-grow: 0; }
+	.grow { flex-grow: 1; }
+	.md\:grow-0 { flex-grow: 0; }
+	.md\:grow { flex-grow: 1; }
+}
+
+/* ==========================================================================
+   WordPress Core Styles
+   ========================================================================== */
+.wp-caption {
+	margin-bottom: var(--wp--preset--spacing--20);
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.sticky {
+	display: block;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/* ==========================================================================
+   WooCommerce Styles
+   ========================================================================== */
+.woocommerce .woocommerce-layout {
+	gap: var(--wp--preset--spacing--40);
+}
+
+.woocommerce .woocommerce-layout .wp-block-column.main {
+	flex-basis: 75%;
+}
+
+.woocommerce .woocommerce-layout .wp-block-column.sidebar {
+	flex-basis: 25%;
+}
+
+.woocommerce ul.products {
+	list-style: none;
+	margin: 0 0 2rem;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1.5rem;
+}
+
+.woocommerce ul.products li.product {
+	margin: 0;
+}
+
+.woocommerce div.product {
+	margin-bottom: 2rem;
+}
+
+li.wc-block-product:not([class*="product_cat"]) {
+	display: none;
+}
+
+.product-category img {
+	border: 1px solid transparent;
+	border-radius: 100rem;
+	transition: border-color 0.2s ease;
+}
+
+.product-category a:hover img,
+.product-category a:focus img {
+	border-color: var(--wp--preset--color--theme-5);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: 700;
+	color: var(--wp--preset--color--theme-4);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title .count {
+	display: none;
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: var(--wp--preset--color--theme-1);
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: var(--wp--preset--color--theme-5);
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* ==========================================================================
+   Error 404 Styles
+   ========================================================================== */
+.error404 .wp-block-template-part {
+	margin-top: 0 !important;
+}
+
+.error404 .site-main {
+	text-align: center;
+	padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--40);
+}
+
+/* ==========================================================================
+   Miscellaneous
+   ========================================================================== */
+.overflow-hidden {
+	overflow: hidden;
+}
+
+/* Tiny tweak to make sure footers are properly spaced */
 footer {
 	margin-top: 0 !important;
 }
@@ -46,119 +745,4 @@ footer {
 
 .wp-block-social-links.has-small-icon-size {
 	font-size: 20px;
-}
-
-/* Set default line height for font size presets. */
-.has-xx-large-font-size {
-	line-height: 1;
-}
-
-/* Add space between the header and first element, if its a paragraph. */
-.entry-content > p:first-child {
-	margin-top: var(--wp--style--root--padding-left);
-}
-
-/* Move header core/navigation to the right on mobile. */
-.order-0 {
-	order: 0;
-}
-
-.order-1 {
-	order: 1;
-}
-
-.grow-0 {
-	flex-grow: 0;
-}
-
-.grow {
-	flex-grow: 1;
-}
-
-@media (min-width: 600px) {
-
-	.md\:order-0 {
-		order: 0;
-	}
-
-	.md\:order-1 {
-		order: 1;
-	}
-
-	.md\:grow-0 {
-		flex-grow: 0;
-	}
-
-	.md\:grow {
-		flex-grow: 1;
-	}
-
-}
-
-.overflow-hidden {
-	overflow: hidden;
-}
-
-.error404 .wp-block-template-part {
-	margin-top: 0 !important;
-}
-
-/* WooCommerce CSS */
-
-li.wc-block-product:not([class*="product_cat"]) {
-    display: none;
-}
-
-.product-category img {
-    border: 1px solid transparent;
-    border-radius: 100rem;
-}
-
-.product-category a:hover img, .product-category a:focus img {
-    border-color: #444;
-}
-
-.woocommerce ul.products li.product .woocommerce-loop-category__title {
-    text-align: center;
-    font-size: 1.25em;
-    font-weight: 700;
-    color: #4c7943;
-}
-
-.woocommerce ul.products li.product .woocommerce-loop-category__title .count {
-    display: none;
-}
-
-/* Custom CSS */
-
-nav.is-responsive {
-	width: auto !important;
-}
-
-/* WooCommerce Layout */
-.woocommerce .woocommerce-layout {
-        gap: var(--wp--style--block-gap, 2rem);
-}
-.woocommerce .woocommerce-layout .wp-block-column.main {
-        flex-basis: 75%;
-}
-.woocommerce .woocommerce-layout .wp-block-column.sidebar {
-        flex-basis: 25%;
-}
-
-.woocommerce ul.products {
-        list-style: none;
-        margin: 0 0 2rem;
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1.5rem;
-}
-
-.woocommerce ul.products li.product {
-        margin: 0;
-}
-
-.woocommerce div.product {
-        margin-bottom: 2rem;
 }
