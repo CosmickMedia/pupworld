@@ -128,6 +128,21 @@ section {
     text-align: center;
 }
 
+/* Financing banner styles */
+.financing {
+    background-color: #ffe8b3;
+    padding: 4rem 2rem;
+}
+
+.financing h2 {
+    font-size: 3rem;
+}
+
+.financing p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
 /* Navigation block links */
 .wp-block-navigation-item__content {
     color: var(--wp--preset--color--theme-2);
