@@ -162,3 +162,35 @@ section {
     text-align: left;
     font-size: 2.5rem;
 }
+
+/* Footer styles */
+.site-footer {
+    background-color: #102624;
+    color: #f7f7f3;
+}
+
+.site-footer a {
+    color: #f7f7f3;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    color: #f2a307;
+}
+
+.site-footer .footer-nav a {
+    color: #f7f7f3;
+}
+
+.site-footer .footer-nav a:hover,
+.site-footer .footer-nav a:focus {
+    color: #f2a307;
+}
+
+.site-footer .social-links a {
+    color: #f7f7f3;
+}
+
+.site-footer .social-links a:hover {
+    color: #f2a307;
+}
