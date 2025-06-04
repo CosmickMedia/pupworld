@@ -16,9 +16,8 @@ get_header();
         </div>
     </section>
 
-    <div class="container py-4">
-
     <section class="adoption mb-5">
+        <div class="container py-4">
         <h2 class="mb-4">Available for adoption</h2>
         <div class="row breeds">
             <article class="breed col-md-3 text-center">
@@ -42,7 +41,10 @@ get_header();
                 <p>Trust us to whisk your pet off to the doctor’s for their check-up. They’ll be in safe hands, ensuring they stay healthy and happy.</p>
             </article>
         </div>
+        </div>
     </section>
+
+    <div class="container py-4">
 
     <section class="financing">
         <h2>Financing Options</h2>
