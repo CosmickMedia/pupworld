@@ -119,3 +119,12 @@ section {
 .location {
     text-align: center;
 }
+
+/* Navigation block links */
+.wp-block-navigation-item__content {
+    color: var(--wp--preset--color--theme-2);
+}
+.wp-block-navigation-item__content:hover,
+.wp-block-navigation-item__content:focus {
+    color: var(--wp--preset--color--theme-4);
+}
