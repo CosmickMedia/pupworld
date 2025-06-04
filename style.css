@@ -128,3 +128,14 @@ section {
 .wp-block-navigation-item__content:focus {
     color: var(--wp--preset--color--theme-4);
 }
+
+/* Adoption section styles */
+.adoption {
+    background-color: #7bdcb5;
+    padding: 2rem;
+}
+
+.adoption h2 {
+    text-align: left;
+    font-size: 2.5rem;
+}
