@@ -1,16 +1,16 @@
-<footer class="site-footer bg-light py-4">
-    <div class="container">
-        <div class="row mb-3">
-            <div class="col-md-4 footer-branding">
+<footer class="site-footer text-light" style="background-color: #102624;">
+    <div class="container-fluid py-4 px-3">
+        <div class="row mb-3 align-items-center">
+            <div class="col-lg-4 footer-branding d-flex align-items-center mb-3 mb-lg-0">
                 <?php if ( has_custom_logo() ) : ?>
-                    <div class="footer-logo mb-2">
+                    <a class="navbar-brand me-3" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <?php the_custom_logo(); ?>
-                    </div>
+                    </a>
                 <?php endif; ?>
-                <p class="footer-site-title mb-0"><?php bloginfo( 'name' ); ?></p>
+                <p class="footer-site-title mb-0 fw-bold"><?php bloginfo( 'name' ); ?></p>
             </div>
 
-            <div class="col-md-8 footer-navigation">
+            <div class="col-lg-8 footer-navigation">
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'footer',
@@ -21,16 +21,16 @@
                 ) );
                 ?>
                 <ul class="social-links list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-contact text-center">
-            <p class="mb-1"><strong>Email:</strong> <a href="mailto:01pupworld@gmail.com">01pupworld@gmail.com</a> | <strong>Phone:</strong> <a href="tel:2607109103">260.710.9103</a></p>
-            <p class="mb-0">10512 Schwartz RD. Ft Wayne. IN 46835</p>
+            <p class="mb-1"><i class="fas fa-phone"></i> <a href="tel:2607109103" class="text-light text-decoration-none">260.710.9103</a></p>
+            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 10512 Schwartz RD. Ft Wayne. IN 46835</p>
         </div>
     </div>
 </footer>
