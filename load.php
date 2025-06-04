@@ -88,12 +88,19 @@ if ( ! function_exists( 'pupworld_styles' ) ) :
                         '5.3.2'
                 );
 
-                wp_register_style(
-                        'font-awesome',
-                        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-                        array(),
-                        '6.4.0'
-                );
+               wp_register_style(
+                       'font-awesome',
+                       'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+                       array(),
+                       '6.4.0'
+               );
+
+               wp_register_style(
+                       'pupworld-google-fonts',
+                       'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap',
+                       array(),
+                       null
+               );
 
                 wp_register_style(
                         'pupworld-style',
@@ -102,9 +109,10 @@ if ( ! function_exists( 'pupworld_styles' ) ) :
                         PUPWORLD_VERSION
                 );
 
-                wp_enqueue_style( 'bootstrap-css' );
-                wp_enqueue_style( 'font-awesome' );
-                wp_enqueue_style( 'pupworld-style' );
+               wp_enqueue_style( 'bootstrap-css' );
+               wp_enqueue_style( 'font-awesome' );
+               wp_enqueue_style( 'pupworld-google-fonts' );
+               wp_enqueue_style( 'pupworld-style' );
 
                 wp_register_script(
                         'bootstrap-js',
