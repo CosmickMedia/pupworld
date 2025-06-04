@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('/wp-content/uploads/2025/04/front-page-photo.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
+    min-height: 80vh;
     position: relative;
 }
 .hero::before {
