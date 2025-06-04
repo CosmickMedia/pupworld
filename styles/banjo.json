@@ -109,84 +109,16 @@
 			"defaultFontSizes": false,
 			"fluid": true,
 			"fontFamilies": [
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Urbanist",
-							"fontStyle": "normal",
-							"fontWeight": "100 900",
-							"src": [
-								"file:./assets/fonts/urbanist/Urbanist-VariableFont_wght.ttf"
-							]
-						},
-						{
-							"fontFamily": "Urbanist",
-							"fontStyle": "italic",
-							"fontWeight": "100 900",
-							"src": [
-								"file:./assets/fonts/urbanist/Urbanist-Italic-VariableFont_wght.ttf"
-							]
-						}
-					],
-					"fontFamily": "\"Urbanist\", sans-serif",
-					"name": "Urbanist",
-					"slug": "urbanist"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Asap Condensed",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/asap/AsapCondensed-Regular.ttf"
-							]
-						},
-						{
-							"fontFamily": "Asap Condensed",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/asap/AsapCondensed-Italic.ttf"
-							]
-						},
-						{
-							"fontFamily": "Asap Condensed",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/asap/AsapCondensed-Medium.ttf"
-							]
-						},
-						{
-							"fontFamily": "Asap Condensed",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/asap/AsapCondensed-MediumItalic.ttf"
-							]
-						},
-						{
-							"fontFamily": "Asap Condensed",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": [
-								"file:./assets/fonts/asap/AsapCondensed-SemiBold.ttf"
-							]
-						},
-						{
-							"fontFamily": "Asap Condensed",
-							"fontStyle": "italic",
-							"fontWeight": "600",
-							"src": [
-								"file:./assets/fonts/asap/AsapCondensed-SemiBoldItalic.ttf"
-							]
-						}
-					],
-					"fontFamily": "Asap Condensed",
-					"name": "Asap Condensed",
-					"slug": "asap-condensed"
-				}
+                                {
+                                        "fontFamily": "sans-serif",
+                                        "name": "Sans Serif",
+                                        "slug": "urbanist"
+                                },
+                                {
+                                        "fontFamily": "\"Varela Round\", sans-serif",
+                                        "name": "Varela Round",
+                                        "slug": "asap-condensed"
+                                }
 			],
 			"fontSizes": [
 				{
