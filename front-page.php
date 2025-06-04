@@ -46,9 +46,10 @@ get_header();
 
     <div class="container py-4">
 
-    <section class="financing">
-        <h2>Financing Options</h2>
-        <p>Please contact us to learn more about flexible payment plans for your new puppy.</p>
+    <section class="financing text-center py-5">
+        <h2 class="display-4">Financing Options</h2>
+        <p class="lead">We offer financing through IGW and Splitit, making it easier than ever to bring home your new best friend. Contact us to learn more or to get started!</p>
+        <a href="/financing" class="btn btn-primary btn-lg mt-3">Learn More</a>
     </section>
 
     <?php
