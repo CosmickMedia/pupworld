@@ -21,8 +21,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#7bdcb5","text":"#102624"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="background-color:#7bdcb5;color:#102624">see puppies</a></div>
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button btn-cta">see puppies <i class="fas fa-arrow-right ms-2"></i></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:cover --></div>

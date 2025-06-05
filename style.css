@@ -110,15 +110,22 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
 }
-.hero .btn-primary {
-    background-color: #f2a307;
-    border-color: #f2a307;
+.btn-cta,
+.wp-block-button__link {
+    background-color: #cbfba0;
     color: #102624;
+    border-radius: 50rem;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
-.hero .btn-primary:hover {
-    background-color: #d38e06;
-    border-color: #d38e06;
-    color: #ffffff;
+
+.btn-cta:hover,
+.wp-block-button__link:hover {
+    background-color: #b4e88a;
+    color: #102624;
 }
 
 /* General section spacing */
@@ -165,18 +172,8 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.btn-financing {
-    background-color: #102624;
-    color: #ffffff;
-    border-radius: 50rem;
-    padding: 0.6rem 1.5rem;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-financing:hover {
-    background-color: #18453d;
-    color: #ffffff;
+.financing img {
+    max-width: 40%;
 }
 
 /* Navigation block links */
@@ -230,18 +227,6 @@ section {
     font-size: 0.95rem;
 }
 
-.adoption .btn-breeds {
-    background-color: #102624;
-    color: #ffffff;
-    border-radius: 50rem;
-    padding: 0.6rem 1.5rem;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.adoption .btn-breeds:hover {
-    background-color: #18453d;
-}
 
 /* Adoption carousel controls */
 #adoptionCarousel .carousel-control-prev,
