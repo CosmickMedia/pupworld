@@ -94,11 +94,11 @@ get_header();
             </div>
         </div>
     </section>
+    </div>
 
     <?php
     echo do_blocks( '<!-- wp:pattern {"slug":"bark/about"} /-->' );
     ?>
-    </div>
 </main>
 
 <?php
