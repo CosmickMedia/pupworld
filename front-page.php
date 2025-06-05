@@ -78,7 +78,7 @@ get_header();
 
     <div class="container py-4">
 
-    <section class="financing py-5">
+    <section class="financing py-5 mb-5">
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/finance-pet.png" alt="Finance Pet" class="img-fluid d-block mb-3" />
