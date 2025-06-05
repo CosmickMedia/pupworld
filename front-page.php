@@ -27,43 +27,48 @@ get_header();
                     <p class="adoption-copy">Our puppies are waiting for loving homes. Choose your perfect companion and experience unconditional love.</p>
                 </div>
             </div>
-            <div class="row breeds">
-                <article class="breed col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100 text-center">
-                        <img class="card-img-top img-fluid" src="/wp-content/uploads/2025/04/golden-retreiver.jpg" alt="Golden Retriever">
-                        <div class="card-body">
-                            <h3 class="card-title">Golden Retriever</h3>
-                            <p class="card-text">Known for their gentle nature, intelligence, and playful spirit, Goldens make the perfect family companion.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="breed col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100 text-center">
-                        <img class="card-img-top img-fluid" src="/wp-content/uploads/2025/04/golden-doodle.jpg" alt="Golden Doodle">
-                        <div class="card-body">
-                            <h3 class="card-title">Golden Doodle</h3>
-                            <p class="card-text">With their affectionate nature, intelligence, and low-shedding coats, Goldendoodles make the perfect family companion, bringing warmth, joy, and endless fun into your home.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="breed col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100 text-center">
-                        <img class="card-img-top img-fluid" src="/wp-content/uploads/2025/04/rottweiler.jpg" alt="Rottweiler">
-                        <div class="card-body">
-                            <h3 class="card-title">Rottweiler</h3>
-                            <p class="card-text">With their calm and confident demeanor, combined with a deep bond to their family, makes them not only excellent protectors but also affectionate and loving companions who thrive in a caring home.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="breed col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100 text-center">
-                        <img class="card-img-top img-fluid" src="/wp-content/uploads/2025/04/yorkshire-terrier.jpg" alt="Yorkshire Terrier">
-                        <div class="card-body">
-                            <h3 class="card-title">Yorkshire Terrier</h3>
-                            <p class="card-text">Trust us to whisk your pet off to the doctor’s for their check-up. They’ll be in safe hands, ensuring they stay healthy and happy.</p>
-                        </div>
-                    </div>
-                </article>
+            <?php
+            $parent = get_term_by( 'slug', 'puppies-for-sale', 'product_cat' );
+            $categories = [];
+            if ( $parent ) {
+                $categories = get_terms( [
+                    'taxonomy'   => 'product_cat',
+                    'parent'     => $parent->term_id,
+                    'hide_empty' => true,
+                ] );
+            }
+            ?>
+            <div id="adoptionCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <?php if ( $categories && ! is_wp_error( $categories ) ) : ?>
+                        <?php foreach ( $categories as $index => $cat ) : ?>
+                            <?php
+                            $thumb_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
+                            $image    = $thumb_id ? wp_get_attachment_image_url( $thumb_id, 'medium' ) : wc_placeholder_img_src();
+                            ?>
+                            <div class="carousel-item <?php echo 0 === $index ? 'active' : ''; ?>">
+                                <article class="breed mx-auto" style="max-width:300px;">
+                                    <div class="card h-100 text-center position-relative">
+                                        <img class="card-img-top img-fluid" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $cat->name ); ?>">
+                                        <div class="card-body">
+                                            <h3 class="card-title"><?php echo esc_html( $cat->name ); ?></h3>
+                                            <p class="card-text"><?php echo esc_html( $cat->description ); ?></p>
+                                            <a href="<?php echo esc_url( get_term_link( $cat ) ); ?>" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#adoptionCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#adoptionCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <div class="text-center mt-3">
                 <a href="/all-breeds" class="btn btn-breeds">See All Breeds</a>
