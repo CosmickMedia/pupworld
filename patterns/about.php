@@ -16,11 +16,11 @@
 <!-- wp:columns {"align":"full"} -->
 <div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading -->
-<h2 class="wp-block-heading"><i class="fas fa-paw me-2"></i><?php echo esc_html__( 'Meet the pack', 'bark' ); ?></h2>
+<h2 class="wp-block-heading"><i class="fas fa-paw me-2"></i><?php echo esc_html__( 'Our Mission', 'bark' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Our mission is to bring joy to families with loyal, loving companions. Each puppy is raised with unmatched care and attention, receiving early socialization and comprehensive health checks. We work closely with you to ensure the perfect match so your new friend thrives from day one.</p>
+<p>Our mission is simple: to bring joy to families by providing them with loyal, loving companions while ensuring the highest standards of health, care, and ethics. We believe every puppy deserves a home where they are cherished.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
