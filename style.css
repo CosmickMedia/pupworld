@@ -210,6 +210,29 @@ section {
     background-color: #18453d;
 }
 
+/* Adoption carousel controls */
+#adoptionCarousel .carousel-control-prev,
+#adoptionCarousel .carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#adoptionCarousel .carousel-control-prev-icon,
+#adoptionCarousel .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+.adoption .breed .arrow-link {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 1.25rem;
+}
+
 /* Footer styles */
 .site-footer {
     background-color: #102624;
