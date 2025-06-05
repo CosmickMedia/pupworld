@@ -78,10 +78,21 @@ get_header();
 
     <div class="container py-4">
 
-    <section class="financing text-center py-5">
-        <h2 class="display-4">Financing Options</h2>
-        <p class="lead">We offer financing through IGW and Splitit, making it easier than ever to bring home your new best friend. Contact us to learn more or to get started!</p>
-        <a href="/financing" class="btn btn-primary btn-lg mt-3">Learn More</a>
+    <section class="financing py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/finance-pet.png" alt="Finance Pet" class="img-fluid d-block mb-3" />
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/splitit.png" alt="Splitit" class="img-fluid d-block" />
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-money-bill-wave fa-2x me-3"></i>
+                    <h2 class="display-5 mb-0">Financing Options</h2>
+                </div>
+                <p class="lead">We offer financing through IGW and Splitit, making it easier than ever to bring home your new best friend. Contact us to learn more or to get started!</p>
+                <a href="/financing" class="btn btn-financing btn-lg">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
     </section>
 
     <?php
