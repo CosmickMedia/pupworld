@@ -10,7 +10,7 @@
                 <p class="footer-site-title mb-0 fw-bold"><?php bloginfo( 'name' ); ?></p>
             </div>
 
-            <div class="col-lg-8 footer-navigation">
+            <div class="col-lg-4 footer-navigation">
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'footer',
@@ -26,11 +26,13 @@
                     <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
-        </div>
 
-        <div class="footer-contact text-center">
-            <p class="mb-1"><i class="fas fa-phone"></i> <a href="tel:2607109103" class="text-light text-decoration-none">260.710.9103</a></p>
-            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 10512 Schwartz RD. Ft Wayne. IN 46835</p>
+            <div class="col-lg-4 footer-contact text-lg-end text-center">
+                <h5 class="mb-2">Contact us</h5>
+                <p class="mb-1"><i class="fas fa-phone"></i> <a href="tel:2607109103" class="text-light text-decoration-none">260.710.9103</a></p>
+                <p class="mb-1"><i class="fas fa-envelope"></i> <a href="mailto:01pupworld@gmail.com" class="text-light text-decoration-none">01pupworld@gmail.com</a></p>
+                <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 10512 Schwartz RD. Ft Wayne. IN 46835</p>
+            </div>
         </div>
     </div>
 </footer>
