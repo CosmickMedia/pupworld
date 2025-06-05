@@ -131,6 +131,27 @@ section {
     text-align: center;
 }
 
+/* Mission section background pattern */
+.mission {
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/images/paw_pattern_transparent.png');
+    background-repeat: repeat;
+    background-size: 150px;
+}
+
+.mission::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-repeat: inherit;
+    background-size: inherit;
+    opacity: 0.05; /* Faint paw print overlay */
+    pointer-events: none;
+    z-index: -1;
+}
+
 /* Financing banner styles */
 .financing {
     background-color: #ffe8b3;
