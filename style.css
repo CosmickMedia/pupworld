@@ -302,3 +302,24 @@ section {
 .site-footer .social-links a:hover {
     color: #f2a307;
 }
+
+/* Reviews Section */
+.reviews .card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#reviewsCarousel .carousel-control-prev,
+#reviewsCarousel .carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#reviewsCarousel .carousel-control-prev-icon,
+#reviewsCarousel .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
