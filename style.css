@@ -191,6 +191,11 @@ section {
     padding: 2rem 0;
 }
 
+/* Meet the Pack section */
+.meet-pack-section {
+    background-color: #e6f1d5;
+}
+
 .adoption .section-title {
     font-size: 2.5rem;
     font-weight: 700;

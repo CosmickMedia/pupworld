@@ -98,25 +98,6 @@ get_header();
     <?php
     echo do_blocks( '<!-- wp:pattern {"slug":"bark/about"} /-->' );
     ?>
-
-    <section class="mission">
-        <h2>Our Mission</h2>
-        <p>Our mission is simple: to bring joy to families by providing them with loyal, loving companions while ensuring the highest standards of health, care, and ethics. We believe every puppy deserves a home where they are cherished.</p>
-    </section>
-
-    <?php
-    echo do_blocks( '<!-- wp:pattern {"slug":"bark/testimonials"} /-->' );
-    ?>
-
-    <section class="location">
-        <h2>Where are we?</h2>
-        <p>10512 Schwartz Rd, Ft Wayne, IN 46835</p>
-    </section>
-
-        <?php
-        echo do_blocks( '<!-- wp:pattern {"slug":"bark/latest-posts"} /-->' );
-        echo do_blocks( '<!-- wp:pattern {"slug":"bark/contact"} /-->' );
-        ?>
     </div>
 </main>
 
