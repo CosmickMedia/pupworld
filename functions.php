@@ -32,3 +32,5 @@ class PUPWORLD_THEME {
 $PUPWORLD_THEME = new PUPWORLD_THEME();
 
 require_once ( dirname( __FILE__ ) . '/load.php' );
+
+require_once ( dirname( __FILE__ ) . '/reviews.php' );
