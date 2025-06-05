@@ -112,12 +112,12 @@
                                 {
                                         "fontFamily": "sans-serif",
                                         "name": "Sans Serif",
-                                        "slug": "urbanist"
+                                        "slug": "inter"
                                 },
                                 {
-                                        "fontFamily": "\"Varela Round\", sans-serif",
-                                        "name": "Varela Round",
-                                        "slug": "asap-condensed"
+                                        "fontFamily": "\"Inter\", sans-serif",
+                                        "name": "Inter",
+                                        "slug": "inter"
                                 }
 			],
 			"fontSizes": [
@@ -171,7 +171,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--urbanist)"
+					"fontFamily": "\"Inter\", sans-serif"
 				},
 				"variations": {
 					"outline": {
@@ -308,7 +308,7 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--asap-condensed)",
+					"fontFamily": "\"Inter\", sans-serif",
 					"fontWeight": "500"
 				}
 			}
@@ -321,7 +321,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--urbanist)",
+			"fontFamily": "\"Inter\", sans-serif",
 			"fontSize": "18px",
 			"fontWeight": "400",
 			"lineHeight": "1.65"

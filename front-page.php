@@ -12,7 +12,7 @@ get_header();
     <section class="hero text-center text-white d-flex align-items-center">
         <div class="container">
             <h1 class="display-4 mb-3">Find your best friend!</h1>
-            <a class="btn btn-primary btn-lg" href="/all-puppies">See puppies</a>
+            <a class="btn btn-cta btn-lg" href="/all-puppies">See puppies <i class="fas fa-arrow-right ms-2"></i></a>
         </div>
     </section>
 
@@ -71,7 +71,7 @@ get_header();
                 </button>
             </div>
             <div class="text-center mt-3">
-                <a href="/all-breeds" class="btn btn-breeds">See All Breeds</a>
+                <a href="/all-breeds" class="btn btn-cta">See All Breeds <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -90,7 +90,7 @@ get_header();
                     <h2 class="display-5 mb-0">Financing Options</h2>
                 </div>
                 <p class="lead">We offer financing through IGW and Splitit, making it easier than ever to bring home your new best friend. Contact us to learn more or to get started!</p>
-                <a href="/financing" class="btn btn-financing btn-lg">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="/financing" class="btn btn-cta btn-lg">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>
