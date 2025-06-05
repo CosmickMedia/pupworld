@@ -97,7 +97,7 @@ if ( ! function_exists( 'pupworld_styles' ) ) :
 
                wp_register_style(
                        'pupworld-google-fonts',
-                       'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap',
+                       'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
                        array(),
                        null
                );

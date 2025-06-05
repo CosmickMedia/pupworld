@@ -3,14 +3,17 @@ Theme Name: Pup World
 Version: 1.0.1
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 /* Theme custom styles */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 .site-header {
@@ -154,13 +157,57 @@ section {
 
 /* Adoption section styles */
 .adoption {
-    background-color: #ddf1ce;
-    padding: 2rem;
+    background-color: #e6f1d5;
+    padding: 2rem 0;
 }
 
-.adoption h2 {
-    text-align: left;
+.adoption .section-title {
     font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.adoption .subtitle {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.adoption-copy {
+    font-size: 1rem;
+}
+
+.adoption .breed .card {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+.adoption .breed img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.adoption .breed h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.adoption .breed p {
+    font-size: 0.95rem;
+}
+
+.adoption .btn-breeds {
+    background-color: #102624;
+    color: #ffffff;
+    border-radius: 50rem;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.adoption .btn-breeds:hover {
+    background-color: #18453d;
 }
 
 /* Footer styles */
