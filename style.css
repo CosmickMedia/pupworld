@@ -196,6 +196,7 @@ section {
 }
 .financing-logos {
     gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 767.98px) {
