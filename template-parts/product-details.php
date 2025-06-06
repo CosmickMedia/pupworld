@@ -15,17 +15,19 @@ if ( post_password_required() ) {
     return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'row g-5 align-items-start single-product-details', $product ); ?>>
+<section id="product-<?php the_ID(); ?>" <?php wc_product_class( 'single-product-details row g-5 align-items-start', $product ); ?>>
     <div class="col-lg-7">
-        <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
-    </div>
-    <div class="col-lg-5">
-        <div class="summary entry-summary bg-white p-4 rounded-3 shadow-sm">
-            <?php do_action( 'woocommerce_single_product_summary' ); ?>
+        <div class="product-media">
+            <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
         </div>
     </div>
-</div>
-<?php
-    do_action( 'woocommerce_after_single_product_summary' );
-    do_action( 'woocommerce_after_single_product' );
-?>
+    <div class="col-lg-5">
+        <article class="summary entry-summary bg-white p-4 rounded-3 shadow-sm">
+            <?php do_action( 'woocommerce_single_product_summary' ); ?>
+        </article>
+    </div>
+    <div class="col-12">
+        <?php do_action( 'woocommerce_after_single_product_summary' ); ?>
+    </div>
+</section>
+<?php do_action( 'woocommerce_after_single_product' ); ?>
