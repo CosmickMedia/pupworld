@@ -9,24 +9,18 @@ get_header();
 ?>
 
 <main id="primary" class="site-main homepage">
-    <section class="hero text-center text-white d-flex align-items-center">
+    <section class="hero text-white d-flex align-items-center">
         <div class="container">
-            <h1 class="display-4 mb-3">Find your best friend!</h1>
-            <a class="btn btn-cta btn-lg" href="/all-puppies">See puppies <i class="fas fa-arrow-right ms-2"></i></a>
+            <div class="hero-content">
+                <h1 class="display-4 mb-3">Find your best friend!</h1>
+                <p class="lead mb-4">Your new puppy is waiting for you. Let us help you find the perfect match and bring home a lifetime of love.</p>
+                <a class="btn btn-cta btn-lg" href="/all-puppies">See puppies <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
         </div>
     </section>
 
     <section class="adoption mb-5">
         <div class="container py-5">
-            <div class="row mb-4 align-items-start">
-                <div class="col-md-6">
-                    <h2 class="section-title">Available for adoption</h2>
-                    <p class="subtitle">17 Available breeds</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="adoption-copy">Our puppies are waiting for loving homes. Choose your perfect companion and experience unconditional love.</p>
-                </div>
-            </div>
             <?php
             $parent = get_term_by( 'slug', 'puppies-for-sale', 'product_cat' );
             $categories = [];
@@ -37,7 +31,17 @@ get_header();
                     'hide_empty' => true,
                 ] );
             }
+            $available_count = $categories ? count( $categories ) : 0;
             ?>
+            <div class="row mb-4 align-items-start">
+                <div class="col-md-6 text-start">
+                    <h2 class="section-title">Available for adoption</h2>
+                    <p class="subtitle"><?php echo esc_html( $available_count ); ?> Available breeds</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="adoption-copy">Our puppies are waiting for loving homes. Choose your perfect companion and experience unconditional love.</p>
+                </div>
+            </div>
             <div id="adoptionCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php if ( $categories && ! is_wp_error( $categories ) ) : ?>
@@ -109,6 +113,7 @@ get_header();
     ?>
     <section class="reviews bg-white py-5 my-5">
         <div class="container">
+            <h2 class="text-center mb-5">Our Happy Customers</h2>
             <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php $index = 0; while ( $reviews->have_posts() ) : $reviews->the_post();

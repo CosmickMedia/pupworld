@@ -20,7 +20,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Our mission is simple: to bring joy to families by providing them with loyal, loving companions while ensuring the highest standards of health, care, and ethics. We believe every puppy deserves a home where they are cherished.</p>
+<p>Our mission is simple: to bring joy to families by providing them with loyal, loving companions while ensuring the highest standards of health, care, and ethics. Each puppy is raised with individual attention so they arrive healthy and ready to become a cherished part of your family. Through ongoing education and support, we strive to make every adoption a lifelong success.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

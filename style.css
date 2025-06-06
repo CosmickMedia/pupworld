@@ -68,6 +68,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 4px;
 }
 
+/* Business name larger */
+.business-name {
+    font-size: 2rem;
+}
+
 /* Nested sub menus */
 .dropdown-menu .dropdown-menu {
     background-color: #102624;
@@ -109,6 +114,12 @@ h1, h2, h3, h4, h5, h6 {
 .hero > .container {
     position: relative;
     z-index: 2;
+}
+
+/* Offset hero text */
+.hero .hero-content {
+    margin-left: 200px;
+    text-align: left;
 }
 .btn-cta,
 .wp-block-button__link {
@@ -267,7 +278,7 @@ section {
 
 .adoption .breed .arrow-link {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.25rem;
     left: 50%;
     transform: translateX(-50%);
     color: #000;
@@ -289,8 +300,13 @@ section {
     color: #f2a307;
 }
 
+.site-footer .footer-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
 .site-footer .footer-nav a {
     color: #f7f7f3;
+    text-decoration: none;
 }
 
 .site-footer .footer-nav a:hover,
