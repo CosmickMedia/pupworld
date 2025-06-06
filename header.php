@@ -45,3 +45,22 @@
         </div>
     </div>
 </header>
+
+<!-- Offcanvas menu for mobile -->
+<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="primaryOffcanvas" aria-labelledby="primaryOffcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="primaryOffcanvasLabel"><?php bloginfo( 'name' ); ?></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'main',
+            'menu_id'        => 'primary-offcanvas-menu',
+            'container'      => false,
+            'menu_class'     => 'navbar-nav text-center',
+            'fallback_cb'    => false,
+        ) );
+        ?>
+    </div>
+</div>
