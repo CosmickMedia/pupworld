@@ -15,12 +15,12 @@ if ( post_password_required() ) {
     return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'row g-5', $product ); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'row g-5 align-items-start single-product-details', $product ); ?>>
     <div class="col-md-6">
         <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
     </div>
     <div class="col-md-6">
-        <div class="summary entry-summary">
+        <div class="summary entry-summary bg-white p-4 rounded-3 shadow-sm">
             <?php do_action( 'woocommerce_single_product_summary' ); ?>
         </div>
     </div>
