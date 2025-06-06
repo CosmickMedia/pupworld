@@ -8,7 +8,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header class="site-header navbar navbar-expand-lg" style="background-color: #102624;">
+<header class="site-header navbar navbar-expand-lg navbar-dark" style="background-color: #102624;">
     <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-3">
         <div class="d-flex align-items-center">
             <a class="navbar-brand me-4" href="<?php echo esc_url( home_url( '/' ) ); ?>">
