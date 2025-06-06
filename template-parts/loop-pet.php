@@ -99,11 +99,10 @@ if ( ! empty( $gform_pet_inquiry_popup ) ) {
                     <small>Call</small>
                 </a>
 
-                <!-- TODO: Uncomment when pet inquiry modal is ready -->
-                <!--a href="#petInquiry" class="btn btn-outline-primary btn-sm d-flex flex-column align-items-center gap-1 z-2 action-icon" data-bs-toggle="modal" data-ref-id="<?= $ref_id ?>" title="Ask a Question">
+                <a href="mailto:01pupworld@gmail.com" class="btn btn-outline-primary btn-sm d-flex flex-column align-items-center gap-1 z-2 action-icon" title="Email Us">
                     <i class="fas fa-envelope"></i>
-                    <small>Ask</small>
-                </a-->
+                    <small>Email</small>
+                </a>
             </div>
         </div>
     </div>
