@@ -102,36 +102,62 @@ if ( ! function_exists( 'pupworld_styles' ) ) :
                        null
                );
 
-                wp_register_style(
-                        'pupworld-style',
-                        get_template_directory_uri() . '/style.css',
-                        array( 'bootstrap-css' ),
-                        PUPWORLD_VERSION
-                );
+               wp_register_style(
+                       'pupworld-style',
+                       get_template_directory_uri() . '/style.css',
+                       array( 'bootstrap-css' ),
+                       PUPWORLD_VERSION
+               );
+
+               wp_register_style(
+                       'swiper-css',
+                       'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css',
+                       array(),
+                       '9.4.1'
+               );
 
                wp_enqueue_style( 'bootstrap-css' );
                wp_enqueue_style( 'font-awesome' );
                wp_enqueue_style( 'pupworld-google-fonts' );
+               wp_enqueue_style( 'swiper-css' );
                wp_enqueue_style( 'pupworld-style' );
 
-                wp_register_script(
-                        'bootstrap-js',
-                        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js',
-                        array(),
-                        '5.3.2',
-                        true
-                );
+               wp_register_script(
+                       'bootstrap-js',
+                       'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js',
+                       array(),
+                       '5.3.2',
+                       true
+               );
 
-                wp_register_script(
-                        'pupworld-dropdown',
-                        get_template_directory_uri() . '/assets/js/dropdown.js',
-                        array( 'bootstrap-js' ),
-                        PUPWORLD_VERSION,
-                        true
-                );
+               wp_register_script(
+                       'swiper-js',
+                       'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js',
+                       array(),
+                       '9.4.1',
+                       true
+               );
 
-                wp_enqueue_script( 'bootstrap-js' );
-                wp_enqueue_script( 'pupworld-dropdown' );
+               wp_register_script(
+                       'pupworld-dropdown',
+                       get_template_directory_uri() . '/assets/js/dropdown.js',
+                       array( 'bootstrap-js' ),
+                       PUPWORLD_VERSION,
+                       true
+               );
+
+               wp_register_script(
+                       'pupworld-product',
+                       get_template_directory_uri() . '/assets/js/product.js',
+                       array( 'swiper-js' ),
+                       PUPWORLD_VERSION,
+                       true
+               );
+
+               wp_enqueue_script( 'bootstrap-js' );
+               wp_enqueue_script( 'pupworld-dropdown' );
+               wp_enqueue_script( 'swiper-js' );
+               wp_enqueue_script( 'pupworld-product' );
 
         }
 

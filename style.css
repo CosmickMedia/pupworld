@@ -389,3 +389,61 @@ section {
     background-color: #b4e88a;
     color: #102624;
 }
+
+/* Product gallery swiper */
+.product-gallery-swiper {
+    position: relative;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.product-gallery-swiper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Product tabs styling */
+.woocommerce-tabs .wc-tabs {
+    border-bottom: none;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.woocommerce-tabs .wc-tabs li {
+    list-style: none;
+}
+.woocommerce-tabs .wc-tabs li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    background: #f5f5f5;
+    color: #102624;
+    text-decoration: none;
+}
+.woocommerce-tabs .wc-tabs li.active a,
+.woocommerce-tabs .wc-tabs li a:hover {
+    background: #cbfba0;
+}
+.woocommerce-tabs .panel {
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Sticky add to cart on mobile */
+@media (max-width: 767.98px) {
+    .single-product-details form.cart {
+        position: sticky;
+        bottom: 0;
+        background: #fff;
+        padding: 1rem;
+        z-index: 1000;
+    }
+}
+
+.product-badge {
+    font-size: 0.875rem;
+}
