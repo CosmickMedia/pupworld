@@ -447,3 +447,28 @@ section {
 .product-badge {
     font-size: 0.875rem;
 }
+
+/* Product highlight list */
+.product-highlights {
+    font-size: 0.9rem;
+}
+.product-highlights i {
+    color: #28a745;
+    margin-right: 0.25rem;
+}
+
+/* Trust badges */
+.trust-badges {
+    font-size: 0.875rem;
+    color: #102624;
+}
+.trust-badges i {
+    color: #cbfba0;
+    margin-right: 0.25rem;
+}
+
+@media (max-width: 767.98px) {
+    .single-product-details .single_add_to_cart_button {
+        width: 100%;
+    }
+}
