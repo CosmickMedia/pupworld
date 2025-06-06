@@ -173,7 +173,8 @@ section {
 }
 
 .financing img {
-    max-width: 40%;
+    max-width: 48%;
+    margin-left: auto;
 }
 
 /* Navigation block links */
