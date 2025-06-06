@@ -2,7 +2,8 @@
 get_header();
 
 get_template_part( 'template-parts/section-start', 'woo', [ 'section_class' => 'container py-5' ] );
-get_template_part( 'template-parts/content', 'woo' );
+// Display the WooCommerce page header and notices.
+get_template_part( 'template-parts/content', 'woocommerce' );
 
 if ( have_posts() ) {
 	get_template_part( 'template-parts/section-start', 'woo', [ 'section_class' => 'row g-0 row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 list-unstyled mb-5' ] );

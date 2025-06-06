@@ -33,11 +33,12 @@ if ( $breed_name ) {
 }
 
 if ( ! empty( $gform_pet_inquiry_popup ) ) {
-	$hidden_fields = [
-		'type' => esc_attr( strToUpper( $pet_type ) ),
-		'breed' => esc_attr( strip_tags( $breed_name ) ),
-		'petid' => esc_attr( $pet_id ),
-		'reference' => esc_attr( $ref_id ),
+        $hidden_fields = [
+                'type' => esc_attr( strToUpper( $pet_type ) ),
+                'breed' => esc_attr( strip_tags( $breed_name ) ),
+                // Use the product ID as the pet ID reference.
+                'petid' => esc_attr( $product_id ),
+                'reference' => esc_attr( $ref_id ),
 		'gender' => esc_attr( $gender ),
 		'color' => esc_attr( $color ),
 		'dob' => esc_attr( date( 'm/d/Y', strtotime( $birth_date ) ) ),
