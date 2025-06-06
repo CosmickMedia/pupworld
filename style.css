@@ -121,6 +121,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 200px;
     text-align: left;
 }
+
+@media (max-width: 767.98px) {
+    .hero .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+}
 .btn-cta,
 .wp-block-button__link {
     background-color: #cbfba0;
@@ -184,10 +191,17 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.financing img {
+.financing-logos img {
     max-width: 48%;
-    margin-left: auto;
-    margin-right: 100px;
+}
+.financing-logos {
+    gap: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .financing-logos {
+        justify-content: center;
+    }
 }
 
 /* Navigation block links */
@@ -208,6 +222,7 @@ section {
 /* Meet the Pack section */
 .meet-pack-section {
     background-color: #e6f1d5;
+    margin-top: 2rem;
 }
 
 /* Full-width layout for Meet the Pack */
