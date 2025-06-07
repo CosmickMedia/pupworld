@@ -745,7 +745,9 @@ select,
 
 /* WooCommerce block cart and checkout container fix */
 .wc-block-cart,
-.wc-block-checkout {
+.wc-block-checkout,
+.wp-block-woocommerce-cart,
+.wp-block-woocommerce-checkout {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -787,3 +789,10 @@ select,
     background-color: #b4e88a;
     color: #102624;
 }
+
+/* Center titles on WooCommerce block pages */
+.woocommerce-cart .page-title,
+.woocommerce-checkout .page-title {
+    text-align: center;
+}
+
