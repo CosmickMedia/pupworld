@@ -20,6 +20,11 @@
             </div>
         </div>
 
+        <div class="mobile-icons d-lg-none d-flex align-items-center me-2">
+            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="text-light me-3 account-icon"><i class="fa-solid fa-user"></i></a>
+            <?php pupworld_cart_link(); ?>
+        </div>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryOffcanvas" aria-controls="primaryOffcanvas" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,11 +41,15 @@
             ) );
             ?>
             <div class="header-right d-flex align-items-center">
+                <span class="text-light px-3">|</span>
                 <div class="social-icons me-3">
                     <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
                 </div>
+                <span class="text-light px-3">|</span>
+                <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="text-light me-3 account-icon"><i class="fa-solid fa-user"></i></a>
+                <?php pupworld_cart_link(); ?>
             </div>
         </div>
     </div>
