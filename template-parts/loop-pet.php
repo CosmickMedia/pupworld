@@ -58,7 +58,7 @@ if ( ! empty( $gform_pet_inquiry_popup ) ) {
         <!-- Card Header with Price -->
         <div class="position-relative">
             <div class="position-absolute top-0 end-0 m-2 z-index-1">
-                <div class="product-price-tag badge bg-primary rounded-pill fs-6 py-2 px-3 shadow-sm">
+                <div class="product-price-tag badge bg-gold rounded-pill fs-6 py-2 px-3 shadow-sm">
                     <?= $price ?>
                 </div>
             </div>
@@ -94,12 +94,12 @@ if ( ! empty( $gform_pet_inquiry_popup ) ) {
 
             <!-- Card Actions -->
             <div class="col-auto d-flex flex-column align-items-stretch justify-content-center gap-2">
-                <a href="tel:<?= $location['phone'] ?>" class="btn btn-outline-primary btn-sm d-flex flex-column align-items-center gap-1 z-2 action-icon" title="Call Us">
+                <a href="tel:<?= $location['phone'] ?>" class="btn btn-light btn-sm d-flex flex-column align-items-center gap-1 z-2 action-icon" title="Call Us">
                     <i class="fas fa-phone-alt"></i>
                     <small>Call</small>
                 </a>
 
-                <a href="mailto:01pupworld@gmail.com" class="btn btn-outline-primary btn-sm d-flex flex-column align-items-center gap-1 z-2 action-icon" title="Email Us">
+                <a href="mailto:01pupworld@gmail.com" class="btn btn-dark btn-sm d-flex flex-column align-items-center gap-1 z-2 action-icon" title="Email Us">
                     <i class="fas fa-envelope"></i>
                     <small>Email</small>
                 </a>
@@ -109,6 +109,6 @@ if ( ! empty( $gform_pet_inquiry_popup ) ) {
 
     <!-- Card Footer -->
     <div class="card-footer bg-transparent border-top-0 text-center p-2">
-        <a href="<?= $link ?>" class="btn btn-primary w-100 stretched-link">View Details</a>
+        <a href="<?= $link ?>" class="btn btn-gold w-100 stretched-link">View Details</a>
     </div>
 </div>

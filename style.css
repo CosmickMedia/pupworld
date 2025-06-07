@@ -534,6 +534,13 @@ section {
         .btn-light { color: #ffffff; background-color: #f2a307; border-color: #f8f9fa; }
         .btn-light:hover { color: #000; background-color: #f2a307; border-color: #d3d9df; }
         .btn-light:focus { color: #000; background-color: #f2a307; border-color: #d3d9df; box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5); }
+
+        /* Custom background color utility */
+        .bg-gold { background-color: #f2a307 !important; color: #fff !important; }
+
+        /* Card price styling */
+        .product-card .product-price,
+        .pet-card .product-price { color: #198754; font-weight: 600; }
         .action-buttons .btn { padding: 0.75rem 1rem; font-size: 1rem; }
         .action-buttons .btn-lg { padding: 0.75rem 1rem !important; font-size: 1.1rem; }
         .action-buttons .single_add_to_cart_button { line-height: normal; display: block; }

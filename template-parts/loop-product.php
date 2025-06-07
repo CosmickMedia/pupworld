@@ -21,6 +21,6 @@ $price  = $product->get_price_html();
     <div class="card-body">
         <h5 class="card-title mb-2"><?php echo esc_html( $title ); ?></h5>
         <div class="product-price mb-3"><?php echo $price; ?></div>
-        <a href="<?php echo esc_url( $link ); ?>" class="btn btn-primary">View Details</a>
+        <a href="<?php echo esc_url( $link ); ?>" class="btn btn-gold">View Details</a>
     </div>
 </div>
