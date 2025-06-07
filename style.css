@@ -76,6 +76,19 @@ h1, h2, h3, h4, h5, h6 {
     color: #f2a307;
 }
 
+/* Account and cart icons */
+.account-icon,
+.cart-icon {
+    color: #f7f7f3;
+}
+.account-icon:hover,
+.cart-icon:hover {
+    color: #f2a307;
+}
+.cart-count {
+    font-size: 0.75rem;
+}
+
 .header-phone i {
     margin-right: 4px;
 }

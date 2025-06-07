@@ -95,3 +95,31 @@ function pupworld_trust_badges() {
         . '</div>';
 }
 add_action( 'woocommerce_single_product_summary', 'pupworld_trust_badges', 35 );
+
+/**
+ * Output cart icon markup used in the header.
+ */
+function pupworld_cart_link() {
+    if ( ! function_exists( 'WC' ) ) {
+        return;
+    }
+    $count = WC()->cart->get_cart_contents_count();
+    echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="cart-icon text-light position-relative">'
+        . '<i class="fa-solid fa-shopping-cart"></i>';
+    if ( $count > 0 ) {
+        echo '<span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">'
+            . esc_html( $count ) . '</span>';
+    }
+    echo '</a>';
+}
+
+/**
+ * Ensure cart icon fragments are updated via AJAX when products are added.
+ */
+function pupworld_cart_link_fragment( $fragments ) {
+    ob_start();
+    pupworld_cart_link();
+    $fragments['a.cart-icon'] = ob_get_clean();
+    return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'pupworld_cart_link_fragment' );
