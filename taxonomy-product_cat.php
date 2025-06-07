@@ -7,10 +7,16 @@ get_template_part( 'template-parts/section-start', 'woo', [ 'section_class' => '
 get_template_part( 'template-parts/woocommerce', 'header' );
 
 // Filters and result count before the products grid.
+get_template_part( 'template-parts/section-start', 'woo', [
+    'section_class' => 'shop-loop-actions d-flex justify-content-between flex-wrap mb-4'
+] );
 do_action( 'woocommerce_before_shop_loop' );
+get_template_part( 'template-parts/section-end', 'woo' );
 
 if ( have_posts() ) {
-	get_template_part( 'template-parts/section-start', 'woo', [ 'section_class' => 'row g-0 row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 list-unstyled mb-5' ] );
+    get_template_part( 'template-parts/section-start', 'woo', [
+        'section_class' => 'row g-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 list-unstyled mb-5'
+    ] );
 
 	while ( have_posts() ) {
 		the_post();
