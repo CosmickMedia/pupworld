@@ -82,8 +82,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #f7f7f3;
 }
 .account-icon:hover,
-.cart-icon:hover {
-    color: #f2a307;
+.account-icon:active,
+.cart-icon:hover,
+.cart-icon:active {
+    color: #cccccc;
 }
 .cart-count {
     font-size: 0.75rem;
