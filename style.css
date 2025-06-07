@@ -99,6 +99,25 @@ h1, h2, h3, h4, h5, h6 {
     color: #102624;
 }
 
+/* Offcanvas Menu */
+#primaryOffcanvas {
+    background-color: #102624;
+}
+#primaryOffcanvas .offcanvas-title {
+    color: #f7f7f3;
+}
+#primaryOffcanvas .nav-link,
+#primaryOffcanvas .dropdown-item {
+    color: #f7f7f3;
+}
+#primaryOffcanvas .nav-link:hover,
+#primaryOffcanvas .nav-link:focus,
+#primaryOffcanvas .dropdown-item:hover,
+#primaryOffcanvas .dropdown-item:focus {
+    background-color: #f2a307;
+    color: #102624;
+}
+
 /* Breed images */
 .breed img {
     width: 100%;
