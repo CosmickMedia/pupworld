@@ -279,8 +279,13 @@ section {
 
 .adoption .subtitle {
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
+}
+
+.breed-count {
+    color: #f2a307;
+    font-weight: 700;
 }
 
 .adoption-copy {
@@ -288,7 +293,7 @@ section {
 }
 
 .adoption .breed .card {
-    border: none;
+    border: 1px solid #dee2e6;
     border-radius: 0.5rem;
     background-color: #ffffff;
 }
@@ -323,13 +328,14 @@ section {
     border-radius: 50%;
 }
 
-.adoption .breed .arrow-link {
-    position: absolute;
-    bottom: 0.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #000;
-    font-size: 1.25rem;
+.breed-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.available-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
 /* Footer styles */

@@ -35,8 +35,8 @@ get_header();
             ?>
             <div class="row mb-4 align-items-start">
                 <div class="col-md-6 text-start">
-                    <h2 class="section-title">Available for adoption</h2>
-                    <p class="subtitle"><?php echo esc_html( $available_count ); ?> Available breeds</p>
+                    <h2 class="section-title"><i class="fas fa-paw me-2"></i>Available for adoption</h2>
+                    <p class="subtitle text-start"><span class="breed-count"><?php echo esc_html( $available_count ); ?></span> Available breeds</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <p class="adoption-copy">Our puppies are waiting for loving homes. Choose your perfect companion and experience unconditional love.</p>
@@ -53,11 +53,16 @@ get_header();
                             <div class="carousel-item <?php echo 0 === $index ? 'active' : ''; ?>">
                                 <article class="breed mx-auto" style="max-width:300px;">
                                     <div class="card h-100 text-center position-relative">
+                                        <span class="badge available-badge bg-gold position-absolute top-0 start-0 m-2">Available Now</span>
                                         <img class="card-img-top img-fluid" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $cat->name ); ?>">
                                         <div class="card-body">
-                                            <h3 class="card-title"><?php echo esc_html( $cat->name ); ?></h3>
                                             <p class="card-text"><?php echo esc_html( $cat->description ); ?></p>
-                                            <a href="<?php echo esc_url( get_term_link( $cat ) ); ?>" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                                            <h3 class="card-title">
+                                                <a href="<?php echo esc_url( get_term_link( $cat ) ); ?>" class="btn btn-gold breed-btn d-inline-flex align-items-center">
+                                                    <?php echo esc_html( $cat->name ); ?>
+                                                    <i class="fas fa-arrow-right ms-2"></i>
+                                                </a>
+                                            </h3>
                                         </div>
                                     </div>
                                 </article>
