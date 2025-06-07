@@ -105,9 +105,9 @@ function pupworld_cart_link() {
     }
     $count = WC()->cart->get_cart_contents_count();
     echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="cart-icon text-light position-relative">'
-        . '<i class="fa-solid fa-shopping-cart"></i>';
+        . '<img src="' . get_template_directory_uri() . '/assets/images/cart.svg" width="20" height="20" alt="Cart" />';
     if ( $count > 0 ) {
-        echo '<span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">'
+        echo '<span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill">'
             . esc_html( $count ) . '</span>';
     }
     echo '</a>';
