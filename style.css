@@ -55,6 +55,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f2a307;
     color: #102624;
 }
+/* Ensure submenu links inherit theme colors even without dropdown-item class */
+.dropdown-menu li > a {
+    color: #f7f7f3;
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 1rem;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus {
+    background-color: #f2a307;
+    color: #102624;
+}
 
 /* Social icons */
 .social-icons a {
