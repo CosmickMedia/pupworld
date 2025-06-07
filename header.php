@@ -22,7 +22,10 @@
 
         <div class="mobile-icons d-lg-none d-flex align-items-center me-2">
             <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="text-light me-3 account-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user.svg" width="20" height="20" alt="Account" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path d="M2 14s-1 0-1-1 1-4 7-4 7 3 7 4-1 1-1 1H2z"/>
+                </svg>
             </a>
             <?php pupworld_cart_link(); ?>
         </div>
@@ -51,7 +54,10 @@
                 </div>
                 <span class="text-light px-3">|</span>
                 <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="text-light me-3 account-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user.svg" width="20" height="20" alt="Account" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path d="M2 14s-1 0-1-1 1-4 7-4 7 3 7 4-1 1-1 1H2z"/>
+                    </svg>
                 </a>
                 <?php pupworld_cart_link(); ?>
             </div>
