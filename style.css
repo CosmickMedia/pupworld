@@ -749,6 +749,8 @@ select,
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Style WooCommerce block buttons to match theme buttons */
@@ -765,6 +767,23 @@ select,
 .wc-block-components-button:hover,
 .wc-block-cart__submit-button:hover,
 .wc-block-components-checkout-place-order-button:hover {
+    background-color: #b4e88a;
+    color: #102624;
+}
+
+/* WooCommerce Deposits plugin button styling */
+.wc-deposits-wrapper .button,
+.wc-deposits-wrapper button.button,
+.wc-deposits-wrapper input.button {
+    background-color: #cbfba0;
+    color: #102624;
+    border: none;
+    border-radius: 50rem;
+    padding: 0.6rem 1.5rem;
+}
+.wc-deposits-wrapper .button:hover,
+.wc-deposits-wrapper button.button:hover,
+.wc-deposits-wrapper input.button:hover {
     background-color: #b4e88a;
     color: #102624;
 }
