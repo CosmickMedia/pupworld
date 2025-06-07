@@ -125,3 +125,20 @@ function pupworld_cart_link_fragment( $fragments ) {
     return $fragments;
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'pupworld_cart_link_fragment' );
+
+/**
+ * Display result count above catalog ordering dropdown.
+ */
+function pupworld_shop_controls() {
+    echo '<div class="pupworld-shop-controls">';
+    woocommerce_result_count();
+    woocommerce_catalog_ordering();
+    echo '</div>';
+}
+
+add_action( 'init', function() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+    add_action( 'woocommerce_before_shop_loop', 'pupworld_shop_controls', 20 );
+} );
+
