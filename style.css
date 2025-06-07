@@ -755,39 +755,50 @@ select,
     margin-bottom: 2rem;
 }
 
-/* Style WooCommerce block buttons to match theme buttons */
+/* Style WooCommerce block buttons to match product detail buttons */
 .wc-block-components-button,
 .wc-block-cart__submit-button,
 .wc-block-components-checkout-place-order-button {
-    background-color: #cbfba0;
-    color: #102624;
-    border: none;
-    border-radius: 50rem;
+    background-color: #f2a307;
+    color: #fff;
+    border: 1px solid #f2a307;
+    border-radius: 0.25rem;
     padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
 .wc-block-components-button:hover,
 .wc-block-cart__submit-button:hover,
 .wc-block-components-checkout-place-order-button:hover {
-    background-color: #b4e88a;
-    color: #102624;
+    background-color: #f2a307;
+    color: #fff;
+    border-color: #c08d06;
 }
 
 /* WooCommerce Deposits plugin button styling */
 .wc-deposits-wrapper .button,
 .wc-deposits-wrapper button.button,
 .wc-deposits-wrapper input.button {
-    background-color: #cbfba0;
-    color: #102624;
-    border: none;
-    border-radius: 50rem;
+    background-color: #f2a307;
+    color: #fff;
+    border: 1px solid #f2a307;
+    border-radius: 0.25rem;
     padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .wc-deposits-wrapper .button:hover,
 .wc-deposits-wrapper button.button:hover,
 .wc-deposits-wrapper input.button:hover {
-    background-color: #b4e88a;
-    color: #102624;
+    background-color: #f2a307;
+    color: #fff;
+    border-color: #c08d06;
+}
+.wc-deposits-wrapper .button:focus,
+.wc-deposits-wrapper button.button:focus,
+.wc-deposits-wrapper input.button:focus {
+    background-color: #f2a307;
+    color: #fff;
+    border-color: #c08d06;
+    box-shadow: 0 0 0 0.25rem rgba(185,142,72,0.5);
 }
 
 /* Center titles on WooCommerce block pages */
