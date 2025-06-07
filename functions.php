@@ -142,3 +142,63 @@ add_action( 'init', function() {
     add_action( 'woocommerce_before_shop_loop', 'pupworld_shop_controls', 20 );
 } );
 
+/**
+ * Add "Sort by Breed" option to the catalog ordering dropdown.
+ */
+function pupworld_sortby_breed_option( $options ) {
+    $options = array( 'breed' => __( 'Sort by Breed', 'pupworld' ) ) + $options;
+    return $options;
+}
+add_filter( 'woocommerce_catalog_orderby', 'pupworld_sortby_breed_option' );
+
+/**
+ * Make "Sort by Breed" the default catalog order.
+ */
+add_filter( 'woocommerce_default_catalog_orderby', function() {
+    return 'breed';
+} );
+
+/**
+ * Adjust ordering arguments for the custom breed sort option.
+ */
+function pupworld_sortby_breed_args( $args ) {
+    $orderby = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : get_option( 'woocommerce_default_catalog_orderby' );
+
+    if ( 'breed' === $orderby ) {
+        $args['orderby'] = 'breed';
+        $args['order']   = 'ASC';
+    }
+
+    return $args;
+}
+add_filter( 'woocommerce_get_catalog_ordering_args', 'pupworld_sortby_breed_args' );
+
+/**
+ * Modify the main product query to sort products alphabetically by category.
+ */
+function pupworld_sortby_breed_clauses( $clauses, $query ) {
+    if ( isset( $query->query_vars['orderby'] ) && 'breed' === $query->query_vars['orderby'] ) {
+        global $wpdb;
+        $clauses['join']   .= " LEFT JOIN {$wpdb->term_relationships} tr ON {$wpdb->posts}.ID = tr.object_id";
+        $clauses['join']   .= " LEFT JOIN {$wpdb->term_taxonomy} tt ON tr.term_taxonomy_id = tt.term_taxonomy_id AND tt.taxonomy = 'product_cat'";
+        $clauses['join']   .= " LEFT JOIN {$wpdb->terms} t ON tt.term_id = t.term_id";
+        $clauses['groupby'] = "{$wpdb->posts}.ID";
+        $clauses['orderby'] = 't.name ASC';
+    }
+
+    return $clauses;
+}
+add_filter( 'posts_clauses', 'pupworld_sortby_breed_clauses', 10, 2 );
+
+/**
+ * Ensure the default orderby value is applied to the main product query.
+ */
+function pupworld_set_default_breed_order( $query ) {
+    if ( ! is_admin() && $query->is_main_query() && ( is_shop() || is_product_taxonomy() ) ) {
+        if ( ! isset( $_GET['orderby'] ) ) {
+            $query->set( 'orderby', 'breed' );
+        }
+    }
+}
+add_action( 'pre_get_posts', 'pupworld_set_default_breed_order' );
+
